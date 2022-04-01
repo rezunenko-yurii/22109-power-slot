@@ -1,0 +1,18 @@
+{
+    "name": "WebSdk.Core.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:0757f9d8a63e79f4b86db76555f6c764"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

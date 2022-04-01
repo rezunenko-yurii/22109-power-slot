@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29328f86757a49c4a1cd7c201519cdc9, type: 3}
+  m_Name: Bet1Condition
+  m_EditorClassIdentifier: 
+  <Id>k__BackingField: condition.game4.bet5000
+  <IsFulfilled>k__BackingField: 0
+  <CurrentAmount>k__BackingField: 0
+  <TargetAmount>k__BackingField: 5000
+  <Rewards>k__BackingField: productpack.condition.game4.bet5000
+  <IsRewardTaken>k__BackingField: 0
+  <Location>k__BackingField: screen.game4

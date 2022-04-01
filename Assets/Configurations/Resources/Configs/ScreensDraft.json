@@ -1,0 +1,8 @@
+﻿[
+  {"Id":"screen.dailybonus", "Name": "DailyBonusStepperScreen"},
+  
+  
+  {"Id":"screen.memorymatch.start", "Name": "MemoryMatchStartScreen"},
+  {"Id":"screen.memorymatch.game", "Name": "MemoryMatchGameScreen"},
+  {"Id":"screen.memorymatch.map", "Name": "MemoryMatchMapScreen"}
+]

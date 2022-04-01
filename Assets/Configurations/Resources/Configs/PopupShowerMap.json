@@ -1,0 +1,12 @@
+﻿[
+  {"Id":"popupmap.wheel1.sector1", "EventId": "taken.bundle.wheel1.sector1", "popupId": "popup.wincoins"},
+  {"Id":"popupmap.wheel1.sector2", "EventId": "taken.bundle.wheel1.sector2", "popupId": "popup.wincoins"},
+  {"Id":"popupmap.wheel1.sector3", "EventId": "taken.bundle.wheel1.sector3", "popupId": "popup.wincoins"},
+  {"Id":"popupmap.wheel1.sector4", "EventId": "taken.bundle.wheel1.sector4", "popupId": "popup.wincoins"},
+  {"Id":"popupmap.wheel1.sector5", "EventId": "taken.bundle.wheel1.sector5", "popupId": "popup.wincoins"},
+  {"Id":"popupmap.wheel1.sector6", "EventId": "taken.bundle.wheel1.sector6", "popupId": "popup.wincoins"},
+  {"Id":"popupmap.wheel1.sector7", "EventId": "taken.bundle.wheel1.sector7", "popupId": "popup.wincoins"},
+  {"Id":"popupmap.wheel1.sector8", "EventId": "taken.bundle.wheel1.sector8", "popupId": "popup.wincoins"},
+  {"Id":"popupmap.wheel1.sector9", "EventId": "taken.bundle.wheel1.sector9", "popupId": "popup.wincoins"},
+  {"Id":"popupmap.wheel1.sector10", "EventId": "taken.bundle.wheel1.sector10", "popupId": "popup.wincoins"}
+]

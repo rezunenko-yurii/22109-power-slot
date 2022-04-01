@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a31a6e0a3a3b40f199a998205cbc299b, type: 3}
+  m_Name: FreeSpinsBlueprint
+  m_EditorClassIdentifier: 
+  SlotSprite: {fileID: 21300000, guid: ca9fbef291c7649b6bb8aca232bff1b0, type: 3}
+  isAvailable: 0
+  SearchMode: 1
+  minCombinationAmount: 3
+  dropCoefficient: 7
+  Rewards:
+  - id: 0
+  - id: 1
+  references:
+    version: 1
+    00000000:
+      type: {class: CombinationReward/FreeSpins, ns: DefaultNamespace, asm: Assembly-CSharp}
+      data:
+        amount: 10
+    00000001:
+      type: {class: CombinationReward/MoneyMultiplier, ns: DefaultNamespace, asm: Assembly-CSharp}
+      data:
+        amount: 10
+        multiplier: 3

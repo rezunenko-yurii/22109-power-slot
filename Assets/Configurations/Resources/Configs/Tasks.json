@@ -1,0 +1,4 @@
+[
+  {"Id": "reach.spins.amount.5", "Type": "ReachSpinsAmount", "TargetAmount": 5, "FilterId": "screen.game1"},
+  {"Id": "reach.bets.amount.20", "Type": "ReachBetsAmount", "TargetAmount": 20, "FilterId": "screen.game1"}
+]

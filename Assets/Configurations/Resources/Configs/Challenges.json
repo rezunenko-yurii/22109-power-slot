@@ -1,0 +1,14 @@
+[
+  {
+    "Id": "game1.bets.30", 
+    "RewardId": "game1.bet30",
+    "TaskId": "reach.bets.amount.20",
+    "ResetterId": "game1.bets.30"
+  },
+  {
+    "Id": "dracula.spins.5",
+    "RewardId": "game1.spins30",
+    "TaskId": "reach.spins.amount.5",
+    "ResetterId": "dracula.spins.5"
+  }
+]

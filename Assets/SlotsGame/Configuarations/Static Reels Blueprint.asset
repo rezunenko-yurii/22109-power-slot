@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a159917e56043e08ab4ca80288dab66, type: 3}
+  m_Name: Static Reels Blueprint
+  m_EditorClassIdentifier: 
+  reelPrefab: {fileID: 5043951868728678160, guid: f13ab0d1278dc4d37b26a71062df431d,
+    type: 3}
+  sectorPrefab: {fileID: 3583541112049977832, guid: 0c2e10fb242994f3a8b98e9913bdf5ec,
+    type: 3}
+  cellPrefab: {fileID: 1798191877399771774, guid: e721834d1c7604019bf92b229d5fc692,
+    type: 3}
+  chipPrefab: {fileID: 2287717728549670345, guid: e8a7906df2faf44ee8919aebcd146d2c,
+    type: 3}
+  selectorPrefab: {fileID: 2360154569848080446, guid: f8537646c476b4f1bb00cc6fe6c86045,
+    type: 3}

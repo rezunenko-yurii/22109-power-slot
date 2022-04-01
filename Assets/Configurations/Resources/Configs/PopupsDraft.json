@@ -1,0 +1,17 @@
+﻿[
+  {"Id":"popup.nocoins", "Name": "NoEnoughCoinsPopup"},
+  
+  {"Id":"popup.levelup", "Name": "LevelUpPopup"},
+  {"Id":"popup.winfreespins", "Name": "WinFreespinsPopup"},
+  
+  {"Id":"popup.buygame3", "Name": "BuyGame3Popup"},
+  {"Id":"popup.buygame4", "Name": "BuyGame4Popup"},
+
+  {"Id":"popup.memorymatch.win", "Name": "MemoryMatchWinPopup"},
+  {"Id":"popup.memorymatch.lose", "Name": "MemoryMatchLosePopup"},
+  {"Id":"popup.memorymatch.leave", "Name": "MemoryMatchLeavePopup"},
+  {"Id":"popup.memorymatch.hint", "Name": "MemoryMatchHintPopup"},
+  {"Id":"popup.memorymatch.booster1", "Name": "MemoryMatchBooster1Popup"},
+  {"Id":"popup.memorymatch.booster2", "Name": "MemoryMatchBooster2Popup"},
+  {"Id":"popup.memorymatch.buylife", "Name": "MemoryMatchBuyLifePopup"}
+]

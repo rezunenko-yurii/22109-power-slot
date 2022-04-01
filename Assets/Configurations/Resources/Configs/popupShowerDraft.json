@@ -1,0 +1,9 @@
+[
+  {"Id":"popupmap.dailybonus.1", "EventId": "taken.bundle.dailybonus.1", "popupId": "popup.wincoins"},
+  {"Id":"popupmap.dailybonus.2", "EventId": "taken.bundle.dailybonus.2", "popupId": "popup.wincoins"},
+  {"Id":"popupmap.dailybonus.3", "EventId": "taken.bundle.dailybonus.3", "popupId": "popup.wincoins"},
+  {"Id":"popupmap.dailybonus.4", "EventId": "taken.bundle.dailybonus.4", "popupId": "popup.wincoins"},
+  {"Id":"popupmap.dailybonus.5", "EventId": "taken.bundle.dailybonus.5", "popupId": "popup.wincoins"},
+  {"Id":"popupmap.dailybonus.6", "EventId": "taken.bundle.dailybonus.6", "popupId": "popup.wincoins"},
+  {"Id":"popupmap.dailybonus.7", "EventId": "taken.bundle.dailybonus.7", "popupId": "popup.winfreespinsandcoins"}
+]

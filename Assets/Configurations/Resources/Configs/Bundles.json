@@ -1,0 +1,43 @@
+[
+	{"Id":"bundle.dailybonus.1", "Products":["product.coins.1500","product.spins.25"]},
+	{"Id":"bundle.dailybonus.2", "Products":["product.coins.2000"]},
+	{"Id":"bundle.dailybonus.3", "Products":["product.coins.3000"]},
+	{"Id":"bundle.dailybonus.4", "Products":["product.coins.4000"]},
+	{"Id":"bundle.dailybonus.5", "Products":["product.coins.5000"]},
+	{"Id":"bundle.dailybonus.6", "Products":["product.coins.6000"]},
+	{"Id":"bundle.dailybonus.7", "Products":["product.coins.10000","product.spins.25"]},
+
+	{"Id":"bundle.shop.1", "Products":["product.coins.2000"]},
+	{"Id":"bundle.shop.2", "Products":["product.coins.7000"]},
+	{"Id":"bundle.shop.3", "Products":["product.coins.15000"]},
+	{"Id":"bundle.shop.4", "Products":["product.coins.25000"]},
+	{"Id":"bundle.shop.5", "Products":["product.game.4"]},
+
+	{"Id":"bundle.wheel1.sector1", "Products":["product.coins.150"]},
+	{"Id":"bundle.wheel1.sector2", "Products":["product.coins.100"]},
+	{"Id":"bundle.wheel1.sector3", "Products":["product.coins.300"]},
+	{"Id":"bundle.wheel1.sector4", "Products":["product.coins.100"]},
+	{"Id":"bundle.wheel1.sector5", "Products":["product.coins.150"]},
+	{"Id":"bundle.wheel1.sector6", "Products":["product.coins.50"]},
+	{"Id":"bundle.wheel1.sector7", "Products":["product.coins.100"]},
+	{"Id":"bundle.wheel1.sector8", "Products":["product.coins.200"]},
+	{"Id":"bundle.wheel1.sector9", "Products":["product.coins.50"]},
+
+	{"Id":"bundle.welcomebonus.1", "Products":["product.coins.1500","product.spins.15"]},
+
+	{"Id":"bundle.condition.game1.spins30", "Products":["product.coins.500"]},
+	{"Id":"bundle.condition.game1.bet2000", "Products":["product.coins.5000"]},
+	{"Id":"bundle.condition.game1.bet10000", "Products":["product.coins.15000"]},
+
+	{"Id":"bundle.condition.game2.spins25", "Products":["product.coins.250"]},
+	{"Id":"bundle.condition.game2.bet1000", "Products":["product.coins.2000"]},
+	{"Id":"bundle.condition.game2.bet5000", "Products":["product.coins.10000"]},
+
+	{"Id":"bundle.condition.game3.spins40", "Products":["product.coins.500"]},
+	{"Id":"bundle.condition.game3.bet3000", "Products":["product.coins.5000"]},
+	{"Id":"bundle.condition.game3.bet10000", "Products":["product.coins.15000"]},
+
+	{"Id":"bundle.condition.game4.spins50", "Products":["product.coins.1000"]},
+	{"Id":"bundle.condition.game4.bet5000", "Products":["product.coins.10000"]},
+	{"Id":"bundle.condition.game4.bet20000", "Products":["product.coins.30000"]}
+]

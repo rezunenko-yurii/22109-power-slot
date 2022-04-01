@@ -1,0 +1,17 @@
+﻿[
+  {"Id":"level.1", "Level": 1, "ChipsAmount": 5, "Time": 60},
+  {"Id":"level.2", "Level": 2, "ChipsAmount": 8, "Time": 120},
+  {"Id":"level.3", "Level": 3, "ChipsAmount": 10, "Time": 120},
+  {"Id":"level.4", "Level": 4, "ChipsAmount": 10, "Time": 120},
+  {"Id":"level.5", "Level": 5, "ChipsAmount": 15, "Time": 120},
+  {"Id":"level.6", "Level": 6, "ChipsAmount": 15, "Time": 120},
+  {"Id":"level.7", "Level": 7, "ChipsAmount": 15, "Time": 120},
+  {"Id":"level.8", "Level": 8, "ChipsAmount": 15, "Time": 120},
+  {"Id":"level.9", "Level": 9, "ChipsAmount": 15, "Time": 120},
+  {"Id":"level.10", "Level": 10, "ChipsAmount": 15, "Time": 120},
+  {"Id":"level.11", "Level": 11, "ChipsAmount": 25, "Time": 120},
+  {"Id":"level.12", "Level": 12, "ChipsAmount": 25, "Time": 120},
+  {"Id":"level.13", "Level": 13, "ChipsAmount": 25, "Time": 120},
+  {"Id":"level.14", "Level": 14, "ChipsAmount": 25, "Time": 90},
+  {"Id":"level.15", "Level": 15, "ChipsAmount": 25, "Time": 90}
+]

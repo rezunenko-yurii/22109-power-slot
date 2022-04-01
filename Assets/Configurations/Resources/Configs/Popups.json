@@ -1,0 +1,15 @@
+﻿[
+  {"Id":"popup.paytable1", "Name": "PaytablePopup1"},
+  {"Id":"popup.paytable2", "Name": "PaytablePopup2"},
+  {"Id":"popup.paytable3", "Name": "PaytablePopup3"},
+  {"Id":"popup.paytable4", "Name": "PaytablePopup4"},
+
+  {"Id":"popup.buygame.4", "Name": "BuyGame4Popup"},
+  {"Id":"popup.challenge", "Name": "ChallengePopup"},
+  {"Id":"popup.nocoins", "Name": "NoCoinsPopup"},
+
+  {"Id":"popup.wincoins", "Name": "WinCoinsPopup"},
+  {"Id":"popup.winfreespinsandcoins", "Name": "WinCoinsAndFreespinsPopup"},
+  
+  {"Id":"popup.welcome", "Name": "WelcomeBonusPopup"}
+]

@@ -1,0 +1,15 @@
+﻿[
+  {"Id":"screen.settings", "Name": "SettingsScreen"},
+  {"Id":"screen.shop", "Name": "ShopScreen"},
+  {"Id":"screen.dailybonus", "Name": "DailyBonusStepperScreen"},
+
+  {"Id":"screen.wheel", "Name": "WheelScreen"},
+  {"Id":"screen.lobby", "Name": "LobbyScreen"},
+  {"Id":"screen.levelinfo", "Name": "LevelInfoScreen"},
+  {"Id":"screen.challenges", "Name": "ChallengesScreen"},
+
+  {"Id":"screen.game1", "Name": "Game1Screen"},
+  {"Id":"screen.game2", "Name": "Game2Screen"},
+  {"Id":"screen.game3", "Name": "Game3Screen"},
+  {"Id":"screen.game4", "Name": "Game4Screen"}
+]

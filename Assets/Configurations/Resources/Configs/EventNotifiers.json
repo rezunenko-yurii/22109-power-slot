@@ -1,0 +1,20 @@
+[
+  {"Id": "taken.bundle.dailybonus.1", "TargetId": "bundle.dailybonus.1", "TargetName": "Bundle", "SignalName": "Taken"},
+  {"Id": "taken.bundle.dailybonus.2", "TargetId": "bundle.dailybonus.2", "TargetName": "Bundle", "SignalName": "Taken"},
+  {"Id": "taken.bundle.dailybonus.3", "TargetId": "bundle.dailybonus.3", "TargetName": "Bundle", "SignalName": "Taken"},
+  {"Id": "taken.bundle.dailybonus.4", "TargetId": "bundle.dailybonus.4", "TargetName": "Bundle", "SignalName": "Taken"},
+  {"Id": "taken.bundle.dailybonus.5", "TargetId": "bundle.dailybonus.5", "TargetName": "Bundle", "SignalName": "Taken"},
+  {"Id": "taken.bundle.dailybonus.6", "TargetId": "bundle.dailybonus.6", "TargetName": "Bundle", "SignalName": "Taken"},
+  {"Id": "taken.bundle.dailybonus.7", "TargetId": "bundle.dailybonus.7", "TargetName": "Bundle", "SignalName": "Taken"},
+
+  {"Id": "taken.bundle.wheel1.sector1", "TargetId": "bundle.wheel1.sector1", "TargetName": "Bundle", "SignalName": "Taken"},
+  {"Id": "taken.bundle.wheel1.sector2", "TargetId": "bundle.wheel1.sector2", "TargetName": "Bundle", "SignalName": "Taken"},
+  {"Id": "taken.bundle.wheel1.sector3", "TargetId": "bundle.wheel1.sector3", "TargetName": "Bundle", "SignalName": "Taken"},
+  {"Id": "taken.bundle.wheel1.sector4", "TargetId": "bundle.wheel1.sector4", "TargetName": "Bundle", "SignalName": "Taken"},
+  {"Id": "taken.bundle.wheel1.sector5", "TargetId": "bundle.wheel1.sector5", "TargetName": "Bundle", "SignalName": "Taken"},
+  {"Id": "taken.bundle.wheel1.sector6", "TargetId": "bundle.wheel1.sector6", "TargetName": "Bundle", "SignalName": "Taken"},
+  {"Id": "taken.bundle.wheel1.sector7", "TargetId": "bundle.wheel1.sector7", "TargetName": "Bundle", "SignalName": "Taken"},
+  {"Id": "taken.bundle.wheel1.sector8", "TargetId": "bundle.wheel1.sector8", "TargetName": "Bundle", "SignalName": "Taken"},
+  {"Id": "taken.bundle.wheel1.sector9", "TargetId": "bundle.wheel1.sector9", "TargetName": "Bundle", "SignalName": "Taken"},
+  {"Id": "taken.bundle.wheel1.sector10", "TargetId": "bundle.wheel1.sector10", "TargetName": "Bundle", "SignalName": "Taken"}
+]

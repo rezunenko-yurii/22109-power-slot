@@ -1,0 +1,4 @@
+[
+	{"Id":"productBundlesSets.dailybonus", "Packs":["bundle.dailybonus.1","bundle.dailybonus.2","bundle.dailybonus.3","bundle.dailybonus.4","bundle.dailybonus.5","bundle.dailybonus.6","bundle.dailybonus.7"]},
+	{"Id":"productBundlesSets.wheel1", "Packs":["bundle.wheel1.sector1","bundle.wheel1.sector2","bundle.wheel1.sector3","bundle.wheel1.sector4","bundle.wheel1.sector5","bundle.wheel1.sector6","bundle.wheel1.sector7","bundle.wheel1.sector8","bundle.wheel1.sector9"]}
+]

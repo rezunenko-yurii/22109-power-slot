@@ -1,0 +1,4 @@
+﻿[
+  {"Id": "scene.webview", "Name": "MainWebSdkScene", "StartScreenId": "screen.webview"},
+  {"Id": "scene.game", "Name": "LobbyScreen", "StartScreenId": "screen.lobby"}
+]
