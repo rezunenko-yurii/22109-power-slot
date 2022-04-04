@@ -3,21 +3,24 @@ using Core;
 using Newtonsoft.Json.Linq;
 using Zenject;
 
-namespace Modules.Resetters.Scripts
+namespace Modules.Reseters.Scripts
 {
-    public class Resetters : ResourcesLoader<IResetter>
+    public class Reseters : ResourcesLoader<IReseter>
     {
         [Inject] private DiContainer _container;
         protected override string FolderName { get; }
         protected override void HandleItem(JToken jToken)
         {
-            var resetter = CreateResetter(jToken);
+            var resetter = Create(jToken);
             _container.Inject(resetter);
+            resetter.Init();
+            
             Add(resetter.Id, resetter);
         }
         
-        private IResetter CreateResetter(JToken jToken) => (string)jToken["Type"] switch
+        private IReseter Create(JToken jToken) => (string)jToken["Type"] switch
         {
+            "TimerReseter" => jToken.ToObject<TimerReseter>(),
             _ => throw new ArgumentOutOfRangeException( $"Not expected direction value: {jToken}"),
         };
     }

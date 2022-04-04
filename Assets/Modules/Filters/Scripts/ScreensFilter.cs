@@ -9,10 +9,7 @@ namespace Modules.Filters.Scripts
         public string[] ScreenIds { get; init; }
         public string Id { get; init; }
         
-        public void Init()
-        {
-            
-        }
+        public void Init() { }
 
         public bool IsRequestSatisfied()
         {

@@ -914,6 +914,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tasksConfig: {fileID: 4900000, guid: d50d4b9489e34cf69cffbb6b947f387d, type: 3}
   _filtersConfig: {fileID: 4900000, guid: f03c109412624e3bb38b7c75ff8e8e1c, type: 3}
+  _resetersConfig: {fileID: 4900000, guid: 341d59befac146afbc36b69d9e7eb6c8, type: 3}
   _challengesConfig: {fileID: 4900000, guid: 9aba5a349a7b4db89761cc361ee477b4, type: 3}
 --- !u!114 &1295376503
 MonoBehaviour:

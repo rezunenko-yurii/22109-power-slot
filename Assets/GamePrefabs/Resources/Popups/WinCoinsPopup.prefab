@@ -298,11 +298,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5710998611003784772, guid: a4c29c18a0ae54e1e96769d0ee910699, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 96
+      value: 75
       objectReference: {fileID: 0}
     - target: {fileID: 5710998611003784772, guid: a4c29c18a0ae54e1e96769d0ee910699, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 96
+      value: 75
       objectReference: {fileID: 0}
     - target: {fileID: 5710998611003784772, guid: a4c29c18a0ae54e1e96769d0ee910699, type: 3}
       propertyPath: m_LocalPosition.x
@@ -334,11 +334,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5710998611003784772, guid: a4c29c18a0ae54e1e96769d0ee910699, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -908
+      value: -880
       objectReference: {fileID: 0}
     - target: {fileID: 5710998611003784772, guid: a4c29c18a0ae54e1e96769d0ee910699, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 478
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 5710998611003784772, guid: a4c29c18a0ae54e1e96769d0ee910699, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -497,6 +497,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4379641221926237660, guid: 874180b88cb7d0e4390d2b18f986397b, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7985395199216980287, guid: 874180b88cb7d0e4390d2b18f986397b, type: 3}
       propertyPath: m_PlayableAsset
       value: 
@@ -622,14 +626,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2194984615254261001, guid: b7725a6135e66894a948c33484609af9, type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-    - target: {fileID: 2194984615254261001, guid: b7725a6135e66894a948c33484609af9, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 2312659513341259538, guid: b7725a6135e66894a948c33484609af9, type: 3}
       propertyPath: m_Name
       value: WinCoinsText
@@ -704,7 +700,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3366030276677738725, guid: b7725a6135e66894a948c33484609af9, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 237
+      value: 227.4
       objectReference: {fileID: 0}
     - target: {fileID: 3366030276677738725, guid: b7725a6135e66894a948c33484609af9, type: 3}
       propertyPath: m_AnchoredPosition.y

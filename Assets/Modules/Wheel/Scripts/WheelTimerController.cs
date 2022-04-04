@@ -44,6 +44,11 @@ public class WheelTimerController : AdvancedMonoBehaviour
         backTimer.SetActive(true);
         textMeshPro.gameObject.SetActive(true);
     }
+    
+    private void UpdateText(int seconds)
+    {
+        UpdateText(TimeSpan.FromSeconds(seconds));
+    }
 
     private void UpdateText(TimeSpan obj)
     {

@@ -43,7 +43,7 @@ namespace ConditionsImp
 
         private bool CanUse => IsExpired && !_model.IsFulfilled && _model.CurrentAmount > 0;
 
-        protected override void OnOver()
+        /*protected override void OnOver()
         {
            base.OnOver();
             if (!_model.IsFulfilled)
@@ -51,8 +51,8 @@ namespace ConditionsImp
                 /*if (_model is ITimerRequest)
                 {
                     _challenge.Reset();
-                }*/
+                }#1#
             }
-        }
+        }*/
     }
 }

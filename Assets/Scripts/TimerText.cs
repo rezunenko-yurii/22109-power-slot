@@ -59,6 +59,11 @@ public abstract class TimerText : AdvancedMonoBehaviour
             child.gameObject.SetActive(isEnable);
         }
     }
+    
+    private void SetTimerText(int seconds)
+    {
+        SetTimerText(TimeSpan.FromSeconds(seconds));
+    }
         
     private void SetTimerText(TimeSpan timeSpan)
     {

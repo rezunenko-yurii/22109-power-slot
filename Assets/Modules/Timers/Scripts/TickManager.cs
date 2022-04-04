@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using Installers;
 using Modules.Coroutines.Scripts;
 using UnityEngine;
@@ -11,11 +12,18 @@ namespace Modules.Timers.Scripts
     public class TickManager : IPreInitializable
     {
         [Inject] private CoroutinesManager _coroutinesManager;
-        private const float TimeStep = 0.01f;
-        private List<Action> _actions = new List<Action>();
+        private const float TimeStep = 1f;
+        
+        private List<Action> _actions;
+        private List<Action> _queueToAdd;
+        private List<Action> _queueToRemove;
 
         public void PreInitialize()
         {
+            _actions = new List<Action>();
+            _queueToAdd = new List<Action>();
+            _queueToRemove = new List<Action>();
+            
             _coroutinesManager.StartCoroutine(Tick());
         }
         
@@ -29,7 +37,7 @@ namespace Modules.Timers.Scripts
             }
             else
             {
-                _actions.Add(action);
+                _queueToAdd.Add(action);
             }
         }
         
@@ -37,7 +45,7 @@ namespace Modules.Timers.Scripts
         {
             if (IsContainsAction(action))
             {
-                _actions.Add(action);
+                _queueToRemove.Add(action);
             }
             else
             {
@@ -50,9 +58,22 @@ namespace Modules.Timers.Scripts
             while (true)
             {
                 yield return new WaitForSeconds(TimeStep);
+                
                 foreach (var action in _actions)
                 {
                     action?.Invoke();
+                }
+
+                if (_queueToAdd.Count > 0)
+                {
+                    _actions = _actions.Concat(_queueToAdd).ToList();
+                    _queueToAdd.Clear();
+                }
+
+                if (_queueToRemove.Count > 0)
+                {
+                    _actions = _actions.Except(_queueToRemove).ToList();
+                    _queueToRemove.Clear();
                 }
             }
         }

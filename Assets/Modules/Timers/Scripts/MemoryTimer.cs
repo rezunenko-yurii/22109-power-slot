@@ -1,5 +1,5 @@
+using System;
 using Modules.Dates;
-using UnityEngine;
 using Zenject;
 
 namespace Modules.Timers.Scripts
@@ -7,32 +7,35 @@ namespace Modules.Timers.Scripts
     public class MemoryTimer : Timer
     {
         [Inject] private DateKeepers _dateKeepers;
+        
+        public string Id { get; set; }
+        public int Duration { get; set; }
+
         public NextDateKeeper Keeper { get; private set; }
-        
-        public override void Init(string id)
+
+        public bool IsExpired => Keeper.IsExpired();
+
+        public override void Init()
         {
-            base.Init(id);
-            
-            Keeper = _dateKeepers.Get<NextDateKeeper>(id);
-            if (IsInited)
-            {
-                Debug.LogWarning("MemoryTimer is already inited");
-                return;
-            }
-            
-            //Keeper.Updated += OnDateUpdated;
-            SetTimer(Keeper.Date);
-        }
-        
-        private void OnDateUpdated()
-        {
-            SetTimer(Keeper.Date);
+            base.Init();
+            Keeper = _dateKeepers.Get<NextDateKeeper>(Id);
         }
 
-        public override void Restart()
+        public void Resume()
         {
-            base.Restart();
+            var a = LeftTimeSpan();
+            Start(a.Seconds);
+        }
+        
+        public void StartFromBeginning()
+        {
             Keeper.AddSecondsFromNow(Duration);
+            Start(Duration);
+        }
+
+        public TimeSpan LeftTimeSpan()
+        {
+            return Keeper.Date - DateTimeOffset.Now;
         }
     }
 }

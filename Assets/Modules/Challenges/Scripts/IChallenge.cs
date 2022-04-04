@@ -1,4 +1,5 @@
 ﻿using System;
+using Modules.Reseters.Scripts;
 using Modules.Tasks;
 
 namespace Modules.Challenges.Scripts
@@ -11,9 +12,12 @@ namespace Modules.Challenges.Scripts
         string Id { get; init; }
         string RewardId { get; init;}
         string TaskId { get; init;}
+        string ReseterId { get; init;}
+        bool IsStarted { get; }
 
         public void Init();
         
         ITask Task { get; }
+        IReseter Reseter { get; }
     }
 }

@@ -22,6 +22,11 @@ namespace Lives
             base.OnDisableInitialized();
             _livesManager.Timer.Counting -= OnCounting;
         }
+        
+        private void OnCounting(int seconds)
+        {
+            OnCounting(TimeSpan.FromSeconds(seconds));
+        }
 
         private void OnCounting(TimeSpan obj)
         {

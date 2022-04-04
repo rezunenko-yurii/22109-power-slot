@@ -108,13 +108,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2466383938111648877}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 6.58, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 2.08, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 4052506151392169739}
-  m_RootOrder: 0
+  m_Father: {fileID: 7146173104037955539}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &69844948941356269
 SpriteRenderer:
@@ -156,7 +156,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: 5bf97a29215ab40848fa80157cbb22df, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -249,6 +249,7 @@ Transform:
   m_Children:
   - {fileID: 4052506151392169739}
   - {fileID: 890796682540442425}
+  - {fileID: 2257321419983871630}
   m_Father: {fileID: 7004561329258772705}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -373,7 +374,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8005804798323948381
 Transform:
   m_ObjectHideFlags: 0
@@ -471,7 +472,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2257321419983871630}
   - {fileID: 1820206279932766482}
   - {fileID: 6508173808527171956}
   m_Father: {fileID: 7146173104037955539}
@@ -504,7 +504,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5947710333358071132, guid: 9ddea034828ae4b83b579392b385a91c, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5947710333358071132, guid: 9ddea034828ae4b83b579392b385a91c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -611,7 +611,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 231691124257493282, guid: 46b62db2800d74291ab8363c69ea83b6, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 2
+      value: 2.4
       objectReference: {fileID: 0}
     - target: {fileID: 231691124257493282, guid: 46b62db2800d74291ab8363c69ea83b6, type: 3}
       propertyPath: m_SizeDelta.y
@@ -672,6 +672,10 @@ PrefabInstance:
     - target: {fileID: 4841206498058998127, guid: 46b62db2800d74291ab8363c69ea83b6, type: 3}
       propertyPath: m_text
       value: 210
+      objectReference: {fileID: 0}
+    - target: {fileID: 4841206498058998127, guid: 46b62db2800d74291ab8363c69ea83b6, type: 3}
+      propertyPath: m_margin.z
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7538535185611797692, guid: 46b62db2800d74291ab8363c69ea83b6, type: 3}
       propertyPath: m_SortingOrder
@@ -896,7 +900,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8025226935284537536, guid: 45a4dc84c8d234659a2221857655ebdf, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8526682638165828714, guid: 45a4dc84c8d234659a2221857655ebdf, type: 3}
       propertyPath: m_SizeDelta.x

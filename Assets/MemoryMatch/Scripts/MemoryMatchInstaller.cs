@@ -28,15 +28,15 @@ namespace MemoryMatch.Scripts
             nextDateKeeper.Init("Lives");
             Container.Bind<NextDateKeeper>().FromInstance(nextDateKeeper);*/
             
-            MemoryTimer timer = new MemoryTimer();
+            /*MemoryTimer timer = new MemoryTimer();
             Container.Inject(timer);
             timer.Init("Lives");
-            Container.Bind<MemoryTimer>().FromInstance(timer);
+            Container.Bind<MemoryTimer>().FromInstance(timer);*/
             //_tickableManager.AddFixed(timer);
             
-            var livesManager = Container.Instantiate<LivesManager>();
+            /*var livesManager = Container.Instantiate<LivesManager>();
             livesManager.Init(3,180, timer);
-            Container.Bind<LivesManager>().FromInstance(livesManager).AsSingle();
+            Container.Bind<LivesManager>().FromInstance(livesManager).AsSingle();*/
         }
     }
 }

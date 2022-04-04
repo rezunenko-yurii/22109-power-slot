@@ -1,4 +1,4 @@
 [
-  {"Id": "reach.spins.amount.5", "Type": "ReachSpinsAmount", "TargetAmount": 5, "FilterId": "screen.game1"},
-  {"Id": "reach.bets.amount.20", "Type": "ReachBetsAmount", "TargetAmount": 20, "FilterId": "screen.game1"}
+  {"Id": "task.game1.spins.20", "Type": "ReachSpinsAmount", "TargetAmount": 5, "FilterId": "filter.screen.game1"},
+  {"Id": "task.game1.bets.1000", "Type": "ReachBetsAmount", "TargetAmount": 100, "FilterId": "filter.screen.game1"}
 ]

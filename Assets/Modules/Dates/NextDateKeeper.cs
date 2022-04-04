@@ -56,7 +56,9 @@ namespace Modules.Dates
 
         public bool IsExpired()
         {
-            return Date.Offset.TotalMilliseconds <= 0;
+            var a = Date - DateTimeOffset.Now;
+            return a.TotalMilliseconds <= 0;
+            //return Date.Offset.TotalMilliseconds <= 0;
         }
 
         protected override string DateCounterPref { get; } = "NextDateKeeper";

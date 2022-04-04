@@ -11,10 +11,13 @@ namespace Modules.Timers.Scripts
         protected override string FolderName { get; }
         protected override void HandleItem(JToken jToken)
         {
+            string id = (string) jToken["Id"];
+            
             var timer = Create(jToken);
             _container.Inject(timer);
             timer.Init();
-            Add(timer.Id, timer);
+            
+            Add(id, timer);
         }
         
         private Timer Create(JToken jToken) => (string)jToken["Type"] switch

@@ -1,10 +1,4 @@
-using Modules.Tasks;
-
-namespace Challenges.Tasks
+namespace Modules.Tasks
 {
-    public interface IReachAmountTask : ITask
-    {
-        int TargetAmount { get; }
-        int CurrentAmount { get; }
-    }
+    public interface IReachAmountTask : ITask { }
 }

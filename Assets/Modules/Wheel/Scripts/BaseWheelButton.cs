@@ -8,17 +8,25 @@ namespace Modules.Wheel.Scripts
 {
     public class BaseWheelButton : AdvancedWorldButton
     {
-        [Inject(Id = ModuleType.Wheel)] private MemoryTimer timer;
         [SerializeField] protected Wheels wheels;
         [SerializeField] private bool hideOnExpire = true;
         
+        [Inject] private Timers.Scripts.Timers _timers;
+        private MemoryTimer _timer;
+
+        protected override void Initialize()
+        {
+            base.Initialize();
+            _timer = (MemoryTimer) _timers.GetObject("wheel");
+        }
+
         protected override void CheckAvailability()
         {
-            ChangeInteractableState(timer.IsExpired);
+            ChangeInteractableState(_timer.IsExpired);
 
             if (hideOnExpire)
             {
-                gameObject.SetActive(timer.IsExpired);
+                gameObject.SetActive(_timer.IsExpired);
             }
         }
         
@@ -26,16 +34,16 @@ namespace Modules.Wheel.Scripts
         {
             base.AddListeners();
             
-            timer.Over += CheckAvailability;
-            timer.Started += SetNoClickable;
+            _timer.Over += CheckAvailability;
+            _timer.Started += SetNoClickable;
         }
 
         protected override void RemoveListeners()
         {
             base.RemoveListeners();
             
-            timer.Over -= CheckAvailability;
-            timer.Started -= SetNoClickable;
+            _timer.Over -= CheckAvailability;
+            _timer.Started -= SetNoClickable;
         }
     }
 }

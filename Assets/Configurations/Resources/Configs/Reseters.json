@@ -1,0 +1,4 @@
+[
+  {"Id": "reseter.game1.bets.1000", "Type":"TimerReseter", "TimerId": "timer.game1.bets.1000"},
+  {"Id": "reseter.game1.spins.20", "Type":"TimerReseter", "TimerId": "timer.game1.spins.20"}
+]

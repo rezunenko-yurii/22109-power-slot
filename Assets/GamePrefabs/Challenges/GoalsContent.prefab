@@ -498,6 +498,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2852084561093726211, guid: 93d7bb4b4caa644dba2ea626d73e8e2a, type: 3}
+      propertyPath: <Revers>k__BackingField
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4197964954563136393, guid: 93d7bb4b4caa644dba2ea626d73e8e2a, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

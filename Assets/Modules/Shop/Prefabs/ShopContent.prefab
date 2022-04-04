@@ -457,7 +457,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2260429413725286123, guid: 062d56a43704fc74a8256c5721cc8f7a, type: 3}
       propertyPath: merchandiseId
-      value: com.cosmslot.devslot.20000
+      value: com.powercas.new.25
       objectReference: {fileID: 0}
     - target: {fileID: 3458370129430082016, guid: 062d56a43704fc74a8256c5721cc8f7a, type: 3}
       propertyPath: m_SizeDelta.x
@@ -583,7 +583,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2260429413725286123, guid: 062d56a43704fc74a8256c5721cc8f7a, type: 3}
       propertyPath: merchandiseId
-      value: com.cosmslot.devslot.magic
+      value: com.powercas.new.mex
       objectReference: {fileID: 0}
     - target: {fileID: 3458370129430082016, guid: 062d56a43704fc74a8256c5721cc8f7a, type: 3}
       propertyPath: m_SizeDelta.x
@@ -709,7 +709,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2260429413725286123, guid: 062d56a43704fc74a8256c5721cc8f7a, type: 3}
       propertyPath: merchandiseId
-      value: com.cosmslot.devslot.2000
+      value: com.powercas.new.2
       objectReference: {fileID: 0}
     - target: {fileID: 3458370129430082016, guid: 062d56a43704fc74a8256c5721cc8f7a, type: 3}
       propertyPath: m_SizeDelta.x
@@ -835,7 +835,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2260429413725286123, guid: 062d56a43704fc74a8256c5721cc8f7a, type: 3}
       propertyPath: merchandiseId
-      value: com.cosmslot.devslot.10000
+      value: com.powercas.new.10
       objectReference: {fileID: 0}
     - target: {fileID: 3458370129430082016, guid: 062d56a43704fc74a8256c5721cc8f7a, type: 3}
       propertyPath: m_SizeDelta.x
@@ -961,7 +961,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2260429413725286123, guid: 062d56a43704fc74a8256c5721cc8f7a, type: 3}
       propertyPath: merchandiseId
-      value: com.cosmslot.devslot.7000
+      value: com.powercas.new.7
       objectReference: {fileID: 0}
     - target: {fileID: 3458370129430082016, guid: 062d56a43704fc74a8256c5721cc8f7a, type: 3}
       propertyPath: m_SizeDelta.x

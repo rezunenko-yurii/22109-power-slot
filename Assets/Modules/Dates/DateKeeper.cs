@@ -19,7 +19,6 @@ namespace Modules.Dates
             protected set
             {
                 _saver.SetValue(value);
-                
                 Updated?.Invoke();
             }
         }

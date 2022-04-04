@@ -5,22 +5,21 @@ using Modules.Timers.Scripts;
 using UnityEngine;
 using Zenject;
 
-namespace WheelLib
+namespace Modules.Wheel.Scripts
 {
     public class Wheels : AdvancedMonoBehaviour
     {
-        [SerializeField] private Wheel[] wheels;
+        [SerializeField] private WheelLib.Wheel[] wheels;
         
         [Inject] private SignalBus _signalBus;
         //[Inject(Id = ModuleType.Wheel)] private NextDateKeeper nextDateKeeper;
-        [Inject] private Timers _timers;
+        [Inject] private Timers.Scripts.Timers _timers;
 
-        public Wheel Current { get; private set; }
+        public WheelLib.Wheel Current { get; private set; }
         private int _currentPosition;
 
         private MemoryTimer _timer;
-
-
+        
         protected override void Initialize()
         {
             base.Initialize();
@@ -50,7 +49,7 @@ namespace WheelLib
             GiveReward();
 
             Current.Spun -= OnSpun;
-            _timer.Restart();
+            _timer.StartFromBeginning();
             //nextDateKeeper.AddHoursFromNow(12);
         }
 
