@@ -16,9 +16,7 @@ namespace SlotsGame.Scripts
     public class SlotsGame : AdvancedMonoBehaviour
     {
         [Inject] private Board board;
-        //[SerializeField] private AudioClip _music;
-        //[SerializeField] private SpinButton spinButton;
-    
+
         [Inject] private EffectsManager _effectsManager;
         [Inject] private CombinationHolder _combinationHolder;
         [Inject] private LinesManager _linesManager;
@@ -30,6 +28,7 @@ namespace SlotsGame.Scripts
         
         [Inject] private SignalsHelper _signalHelper;
         [Inject] private SpinsWallet _spinsWallet;
+        [Inject] private SpinPayer _spinPayer;
 
         private Coroutine _coroutine;
         private AudioSource _audioSource;
@@ -56,6 +55,8 @@ namespace SlotsGame.Scripts
             var freeSpins = _spinsWallet.Balance();
             if (freeSpins > 0)
             {
+                _isSpinning = true;
+                
                 _effectsManager.AddToQuery(EffectsTypes.FreeSpins);
                 _autoSpin.TransitionTo(AutoSpinType.ForcedAmount, (int) freeSpins);
 
@@ -70,14 +71,24 @@ namespace SlotsGame.Scripts
             
             board.Over += OnSpinEnded;
             _effectsManager.Completed += OnEffectsCompleted;
+            _autoSpin.StateChanged += OnStateChanged;
         }
-    
+        
         protected override void RemoveListeners()
         {
             base.RemoveListeners();
             
             board.Over -= OnSpinEnded;
             _effectsManager.Completed -= OnEffectsCompleted;
+            _autoSpin.StateChanged -= OnStateChanged;
+        }
+        
+        private void OnStateChanged(AutoSpinType obj)
+        {
+            if (!_autoSpin.Type.Equals(AutoSpinType.Off) && _spinPayer.CanPay() && !_isSpinning)
+            {
+                StartRound();
+            }
         }
     
         protected override void OnDisableInitialized()
@@ -90,18 +101,24 @@ namespace SlotsGame.Scripts
                 board.Stop();
             }
             
+            _isSpinning = false;
+            _signalHelper.Fire<Core.GameSignals.UserInputResume>();
+            
             TryStopSound();
         }
 
         public void StartRound()
         {
             _signalHelper.Fire<Core.GameSignals.UserInputPause>();
+            _isSpinning = true;
             Spin();
         }
 
         private void Spin()
         {
             Debug.Log($"{nameof(SlotsGame)} {nameof(Spin)}");
+            
+            _spinPayer.PayForSpin();
             _signalHelper.Fire<SlotSignals.SpinStarted>();
             
             _combinationHolder.Clear();
@@ -142,14 +159,16 @@ namespace SlotsGame.Scripts
 
             _signalHelper.Fire<SlotSignals.EffectsEnded>();
 
-            if (!_autoSpin.Type.Equals(AutoSpinType.Off))
+            if (!_autoSpin.Type.Equals(AutoSpinType.Off) && _spinPayer.CanPay())
             {
                 Spin();
             }
             else
             {
+                _autoSpin.TransitionTo(AutoSpinType.Off);
                 _signalHelper.Fire<SlotSignals.RoundEnded>();
                 _signalHelper.Fire<Core.GameSignals.UserInputResume>();
+                _isSpinning = false;
             }
         }
 

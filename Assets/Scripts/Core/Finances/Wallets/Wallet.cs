@@ -48,7 +48,7 @@ namespace Core.Finances.Wallets
             {
                 Collectable.Decrease(amount);
                 
-                FireChangedSignal(amount);
+                FireChangedSignal(Collectable.Amount);
                 FireSpentSignal(amount); 
             }
         }

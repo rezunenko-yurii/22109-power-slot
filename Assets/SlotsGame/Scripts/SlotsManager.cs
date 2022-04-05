@@ -9,11 +9,13 @@ namespace SlotsGame.Scripts
 
         public void Spin()
         {
-            if (_spinPayer.CanPay())
+            if (CanPay)
             {
-                _spinPayer.PayForSpin();
+                //_spinPayer.PayForSpin();
                 _slotsGame.StartRound();
             }
         }
+
+        public bool CanPay => _spinPayer.CanPay();
     }
 }

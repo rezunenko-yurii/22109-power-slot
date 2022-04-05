@@ -12,7 +12,7 @@ namespace WheelLib
         protected override void Initialize()
         {
             base.Initialize();
-            _timer = (MemoryTimer) _timers.GetObject("wheel");
+            _timer = (MemoryTimer) _timers.GetObject("timer.wheel");
         }
 
         protected override void OnEnableInitialized()

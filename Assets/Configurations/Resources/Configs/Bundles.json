@@ -25,19 +25,19 @@
 
 	{"Id":"bundle.welcomebonus.1", "Products":["product.coins.1500","product.spins.15"]},
 
-	{"Id":"bundle.challenge.game1.spins.20", "Products":["product.coins.50"]},
-	{"Id":"bundle.challenge.game1.bets.1000", "Products":["product.coins.200"]},
-	{"Id":"bundle.challenge.game1.bets.10000", "Products":["product.coins.2000"]},
+	{"Id":"bundle.challenge.game1.spins.1", "Products":["product.coins.50"]},
+	{"Id":"bundle.challenge.game1.bets.1", "Products":["product.coins.200"]},
+	{"Id":"bundle.challenge.game1.bets.2", "Products":["product.coins.2000"]},
 
-	{"Id":"bundle.challenge.game2.spins.30", "Products":["product.coins.200"]},
-	{"Id":"bundle.challenge.game2.bets.2000", "Products":["product.coins.500"]},
-	{"Id":"bundle.challenge.game2.bets.10000", "Products":["product.coins.2000"]},
+	{"Id":"bundle.challenge.game2.spins.1", "Products":["product.coins.200"]},
+	{"Id":"bundle.challenge.game2.bets.1", "Products":["product.coins.500"]},
+	{"Id":"bundle.challenge.game2.bets.2", "Products":["product.coins.2000"]},
 
-	{"Id":"bundle.challenge.game3.spins.40", "Products":["product.coins.500"]},
-	{"Id":"bundle.challenge.game3.bets.3000", "Products":["product.coins.700"]},
-	{"Id":"bundle.challenge.game3.bets.10000", "Products":["product.coins.2000"]},
+	{"Id":"bundle.challenge.game3.spins.1", "Products":["product.coins.500"]},
+	{"Id":"bundle.challenge.game3.bets.1", "Products":["product.coins.700"]},
+	{"Id":"bundle.challenge.game3.bets.2", "Products":["product.coins.2000"]},
 
-	{"Id":"bundle.challenge.game4.spins.50", "Products":["product.coins.1000"]},
-	{"Id":"bundle.challenge.game4.bets.10000", "Products":["product.coins.2000"]},
-	{"Id":"bundle.challenge.game4.bets.20000", "Products":["product.coins.5000"]}
+	{"Id":"bundle.challenge.game4.spins.1", "Products":["product.coins.1000"]},
+	{"Id":"bundle.challenge.game4.bets.1", "Products":["product.coins.2000"]},
+	{"Id":"bundle.challenge.game4.bets.2", "Products":["product.coins.5000"]}
 ]

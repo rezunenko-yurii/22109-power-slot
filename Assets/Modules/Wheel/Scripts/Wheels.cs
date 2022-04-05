@@ -12,7 +12,6 @@ namespace Modules.Wheel.Scripts
         [SerializeField] private WheelLib.Wheel[] wheels;
         
         [Inject] private SignalBus _signalBus;
-        //[Inject(Id = ModuleType.Wheel)] private NextDateKeeper nextDateKeeper;
         [Inject] private Timers.Scripts.Timers _timers;
 
         public WheelLib.Wheel Current { get; private set; }
@@ -24,10 +23,9 @@ namespace Modules.Wheel.Scripts
         {
             base.Initialize();
             Current = wheels[_currentPosition];
-            _timer = (MemoryTimer) _timers.GetObject("wheel");
+            _timer = (MemoryTimer) _timers.GetObject("timer.wheel");
         }
         
-
         [ContextMenu("Spin")]
         public void Spin()
         {
@@ -50,7 +48,6 @@ namespace Modules.Wheel.Scripts
 
             Current.Spun -= OnSpun;
             _timer.StartFromBeginning();
-            //nextDateKeeper.AddHoursFromNow(12);
         }
 
         private void GiveReward()

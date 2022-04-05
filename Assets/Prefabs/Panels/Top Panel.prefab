@@ -262,11 +262,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3921348351129163, guid: 28f0217cb73f54d4da18ced8168f0e30, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 400
+      value: 375
       objectReference: {fileID: 0}
     - target: {fileID: 3921348351129163, guid: 28f0217cb73f54d4da18ced8168f0e30, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 100
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 3921348351129163, guid: 28f0217cb73f54d4da18ced8168f0e30, type: 3}
       propertyPath: m_LocalPosition.x
@@ -315,6 +315,30 @@ PrefabInstance:
     - target: {fileID: 3921348351129163, guid: 28f0217cb73f54d4da18ced8168f0e30, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 684354259184480271, guid: 28f0217cb73f54d4da18ced8168f0e30, type: 3}
+      propertyPath: m_Interactable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1444035594615005478, guid: 28f0217cb73f54d4da18ced8168f0e30, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d2d03e25ba2e549c7a76384f69c4e321, type: 3}
+    - target: {fileID: 1444035594615005478, guid: 28f0217cb73f54d4da18ced8168f0e30, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8163338484332584220, guid: 28f0217cb73f54d4da18ced8168f0e30, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8163338484745443322, guid: 28f0217cb73f54d4da18ced8168f0e30, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8163338484745443324, guid: 28f0217cb73f54d4da18ced8168f0e30, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8163338485034843260, guid: 28f0217cb73f54d4da18ced8168f0e30, type: 3}
       propertyPath: m_AnchorMax.x
@@ -570,6 +594,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4108841613026894850, guid: 84b284f937191f74882409bb43d28c08, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610957071207532589, guid: 84b284f937191f74882409bb43d28c08, type: 3}
+      propertyPath: _reactOnPauseInput
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

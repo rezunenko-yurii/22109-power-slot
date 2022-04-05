@@ -426,7 +426,7 @@ PrefabInstance:
     - target: {fileID: 494117037701622349, guid: e7c9196092706234cb7af129db89f818, type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: c8835ac13200e42e5a351e2c0ce7c5da, type: 2}
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 494117037701622349, guid: e7c9196092706234cb7af129db89f818, type: 3}
       propertyPath: m_fontSizeBase
       value: 60
@@ -434,7 +434,7 @@ PrefabInstance:
     - target: {fileID: 494117037701622349, guid: e7c9196092706234cb7af129db89f818, type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: -3961330146845454793, guid: c8835ac13200e42e5a351e2c0ce7c5da, type: 2}
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 5485240020861249376, guid: e7c9196092706234cb7af129db89f818, type: 3}
       propertyPath: m_Name
       value: MoneyWonPanel
@@ -542,6 +542,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3316437439165127471}
     m_Modifications:
+    - target: {fileID: 2193888722726726488, guid: de246318bb44645fa8805d041ad881ac, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    - target: {fileID: 2193888722726726488, guid: de246318bb44645fa8805d041ad881ac, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 6104148001703453760, guid: de246318bb44645fa8805d041ad881ac, type: 3}
       propertyPath: m_Name
       value: BetsStepperPanel
@@ -644,6 +652,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3316437439165127471}
     m_Modifications:
+    - target: {fileID: 3187868084913754074, guid: 1248b634f521b47c8960962af2f6c4e5, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    - target: {fileID: 3187868084913754074, guid: 1248b634f521b47c8960962af2f6c4e5, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 7420134816235618498, guid: 1248b634f521b47c8960962af2f6c4e5, type: 3}
       propertyPath: m_Name
       value: Lines Stepper Panel
@@ -842,6 +858,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8804748874089176933, guid: 1eae00b711f01924687c105785f6697a, type: 3}
+      propertyPath: m_Interactable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8804748874089176933, guid: 1eae00b711f01924687c105785f6697a, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.a
+      value: 0.78431374
+      objectReference: {fileID: 0}
     - target: {fileID: 8964581892696437639, guid: 1eae00b711f01924687c105785f6697a, type: 3}
       propertyPath: m_Name
       value: Spin Button
@@ -963,7 +987,7 @@ PrefabInstance:
     - target: {fileID: 5309876797241696110, guid: 191e8cadbe3b42e4c8a604704f35dc53, type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: c8835ac13200e42e5a351e2c0ce7c5da, type: 2}
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 5309876797241696110, guid: 191e8cadbe3b42e4c8a604704f35dc53, type: 3}
       propertyPath: m_fontSizeBase
       value: 60
@@ -971,7 +995,7 @@ PrefabInstance:
     - target: {fileID: 5309876797241696110, guid: 191e8cadbe3b42e4c8a604704f35dc53, type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: -3961330146845454793, guid: c8835ac13200e42e5a351e2c0ce7c5da, type: 2}
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 191e8cadbe3b42e4c8a604704f35dc53, type: 3}
 --- !u!224 &6965076411271301961 stripped
