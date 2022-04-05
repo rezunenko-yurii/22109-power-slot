@@ -1,4 +1,17 @@
 [
-  {"Id": "task.game1.spins.20", "Type": "ReachSpinsAmount", "TargetAmount": 20, "FilterId": "filter.screen.game1"},
-  {"Id": "task.game1.bets.1000", "Type": "ReachBetsAmount", "TargetAmount": 1000, "FilterId": "filter.screen.game1"}
+  {"Id": "task.game1.spins.1", "Type": "ReachSpinsAmount", "TargetAmount": 20, "FilterId": "filter.screen.game1"},
+  {"Id": "task.game1.bets.1", "Type": "ReachBetsAmount", "TargetAmount": 1000, "FilterId": "filter.screen.game1"},
+  {"Id": "task.game1.bets.2", "Type": "ReachBetsAmount", "TargetAmount": 10000, "FilterId": "filter.screen.game1"},
+
+  {"Id": "task.game2.spins.1", "Type": "ReachSpinsAmount", "TargetAmount": 30, "FilterId": "filter.screen.game2"},
+  {"Id": "task.game2.bets.1", "Type": "ReachBetsAmount", "TargetAmount": 2000, "FilterId": "filter.screen.game2"},
+  {"Id": "task.game2.bets.2", "Type": "ReachBetsAmount", "TargetAmount": 10000, "FilterId": "filter.screen.game2"},
+
+  {"Id": "task.game3.spins.1", "Type": "ReachSpinsAmount", "TargetAmount": 40, "FilterId": "filter.screen.game3"},
+  {"Id": "task.game3.bets.1", "Type": "ReachBetsAmount", "TargetAmount": 3000, "FilterId": "filter.screen.game3"},
+  {"Id": "task.game3.bets.2", "Type": "ReachBetsAmount", "TargetAmount": 10000, "FilterId": "filter.screen.game3"},
+
+  {"Id": "task.game4.spins.1", "Type": "ReachSpinsAmount", "TargetAmount": 50, "FilterId": "filter.screen.game4"},
+  {"Id": "task.game4.bets.1", "Type": "ReachBetsAmount", "TargetAmount": 10000, "FilterId": "filter.screen.game4"},
+  {"Id": "task.game4.bets.2", "Type": "ReachBetsAmount", "TargetAmount": 20000, "FilterId": "filter.screen.game4"}
 ]

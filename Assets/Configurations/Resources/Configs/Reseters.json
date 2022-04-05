@@ -1,4 +1,17 @@
 [
-  {"Id": "reseter.game1.spins.20", "Type":"TimerReseter", "TimerId": "timer.game1.spins.20"},
-  {"Id": "reseter.game1.bets.1000", "Type":"TimerReseter", "TimerId": "timer.game1.bets.1000"}
+  {"Id": "reseter.game1.spins.1", "Type":"TimerReseter", "TimerId": "timer.game1.spins.1"},
+  {"Id": "reseter.game1.bets.1", "Type":"TimerReseter", "TimerId": "timer.game1.bets.1"},
+  {"Id": "reseter.game1.bets.2", "Type":"TimerReseter", "TimerId": "timer.game1.bets.2"},
+
+  {"Id": "reseter.game2.spins.1", "Type":"TimerReseter", "TimerId": "timer.game2.spins.1"},
+  {"Id": "reseter.game2.bets.1", "Type":"TimerReseter", "TimerId": "timer.game2.bets.1"},
+  {"Id": "reseter.game2.bets.2", "Type":"TimerReseter", "TimerId": "timer.game2.bets.2"},
+
+  {"Id": "reseter.game3.spins.1", "Type":"TimerReseter", "TimerId": "timer.game3.spins.1"},
+  {"Id": "reseter.game3.bets.1", "Type":"TimerReseter", "TimerId": "timer.game3.bets.1"},
+  {"Id": "reseter.game3.bets.2", "Type":"TimerReseter", "TimerId": "timer.game3.bets.2"},
+
+  {"Id": "reseter.game4.spins.1", "Type":"TimerReseter", "TimerId": "timer.game4.spins.1"},
+  {"Id": "reseter.game4.bets.1", "Type":"TimerReseter", "TimerId": "timer.game4.bets.1"},
+  {"Id": "reseter.game4.bets.2", "Type":"TimerReseter", "TimerId": "timer.game4.bets.2"}
 ]

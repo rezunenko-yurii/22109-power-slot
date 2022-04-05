@@ -1,6 +1,19 @@
 [
   {"Id": "timer.wheel", "Type": "MemoryTimer", "Duration": "43200"},
   
-  {"Id": "timer.game1.spins.20", "Type": "MemoryTimer", "Duration": "43200"},
-  {"Id": "timer.game1.bets.1000", "Type": "MemoryTimer", "Duration": "43200"}
+  {"Id": "timer.game1.spins.1", "Type": "MemoryTimer", "Duration": "43200"},
+  {"Id": "timer.game1.bets.1", "Type": "MemoryTimer", "Duration": "43200"},
+  {"Id": "timer.game1.bets.2", "Type": "MemoryTimer", "Duration": "43200"},
+  
+  {"Id": "timer.game2.spins.1", "Type": "MemoryTimer", "Duration": "43200"},
+  {"Id": "timer.game2.bets.1", "Type": "MemoryTimer", "Duration": "43200"},
+  {"Id": "timer.game2.bets.2", "Type": "MemoryTimer", "Duration": "43200"},
+  
+  {"Id": "timer.game3.spins.1", "Type": "MemoryTimer", "Duration": "43200"},
+  {"Id": "timer.game3.bets.1", "Type": "MemoryTimer", "Duration": "43200"},
+  {"Id": "timer.game3.bets.2", "Type": "MemoryTimer", "Duration": "43200"},
+
+  {"Id": "timer.game4.spins.1", "Type": "MemoryTimer", "Duration": "43200"},
+  {"Id": "timer.game4.bets.1", "Type": "MemoryTimer", "Duration": "43200"},
+  {"Id": "timer.game4.bets.2", "Type": "MemoryTimer", "Duration": "43200"}
 ]

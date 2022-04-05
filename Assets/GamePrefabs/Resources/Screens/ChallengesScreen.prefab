@@ -70,6 +70,7 @@ RectTransform:
   - {fileID: 555172319200729547}
   - {fileID: 555172317799183440}
   - {fileID: 555172319426822973}
+  - {fileID: 4824201204996690530}
   m_Father: {fileID: 1287830222}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -597,96 +598,180 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!1001 &9175319240651265492
+--- !u!1001 &4184432409914459275
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 563830851}
     m_Modifications:
+    - target: {fileID: 244619828484571977, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: _challengeId
+      value: challenge.game4.bets.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 704671405632706568, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 66
+      objectReference: {fileID: 0}
+    - target: {fileID: 970961966911820369, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: _challengeId
+      value: challenge.game4.bets.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1308006181672654338, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: screenToShowId
+      value: screen.game4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1667087958123116711, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9ad9ddde2355347499d045986c39a72e, type: 3}
+    - target: {fileID: 1836378543289343954, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: m_text
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 2001210305525952594, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2001210305525952594, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2034048143804040986, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: screenToShowId
+      value: screen.game4
       objectReference: {fileID: 0}
     - target: {fileID: 2323577336553223892, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2323577336553223892, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2323577336553223892, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 800
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2323577336553223892, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -300
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2412701870904734555, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: m_text
+      value: 5 000
+      objectReference: {fileID: 0}
+    - target: {fileID: 2536338455584889912, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: _challengeId
+      value: challenge.game4.bets.2
       objectReference: {fileID: 0}
     - target: {fileID: 2552309609788799223, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 600
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2794346048861957259, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: _challengeId
+      value: challenge.game4.bets.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2943980172640550291, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: _challengeId
+      value: challenge.game4.bets.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3255679014713052448, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: _challengeId
+      value: challenge.game4.bets.1
       objectReference: {fileID: 0}
     - target: {fileID: 3324674627610978252, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3324674627610978252, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3324674627610978252, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 800
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3324674627610978252, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -500
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3415768258347065923, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: m_text
+      value: 2 000
       objectReference: {fileID: 0}
     - target: {fileID: 4715673542319772126, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4715673542319772126, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4866976299395106867, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9ad9ddde2355347499d045986c39a72e, type: 3}
+    - target: {fileID: 4884411904677461598, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: m_text
+      value: 20 000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5084192563690186390, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: screenToShowId
+      value: screen.game4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5590767707216042283, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9ad9ddde2355347499d045986c39a72e, type: 3}
+    - target: {fileID: 5608237230014050118, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: m_text
+      value: 10 000
       objectReference: {fileID: 0}
     - target: {fileID: 5694346589679698628, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: m_Name
-      value: GoalsContent (2)
+      value: GoalsContent (3)
       objectReference: {fileID: 0}
     - target: {fileID: 5694346589679698628, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5723490915193651398, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5723490915193651398, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6013348773366397316, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 66
+      objectReference: {fileID: 0}
+    - target: {fileID: 6326791057311118301, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: _challengeId
+      value: challenge.game4.spins.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6732644407145556124, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 66
       objectReference: {fileID: 0}
     - target: {fileID: 8401280133093492288, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8401280133093492288, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8401280133093492288, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 800
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8401280133093492288, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -100
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8710267846065886953, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: m_Pivot.x
@@ -698,7 +783,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8710267846065886953, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8710267846065886953, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: m_AnchorMax.x
@@ -706,7 +791,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8710267846065886953, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8710267846065886953, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: m_AnchorMin.x
@@ -714,7 +799,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8710267846065886953, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8710267846065886953, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: m_SizeDelta.x
@@ -754,11 +839,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8710267846065886953, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 5400
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8710267846065886953, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -393.84473
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8710267846065886953, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -771,6 +856,284 @@ PrefabInstance:
     - target: {fileID: 8710267846065886953, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8756730861213777332, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: _challengeId
+      value: challenge.game4.spins.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8921465523148313303, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: m_text
+      value: 1 000
+      objectReference: {fileID: 0}
+    - target: {fileID: 8967591395958902023, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: _challengeId
+      value: challenge.game4.spins.1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+--- !u!224 &4824201204996690530 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 8710267846065886953, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+  m_PrefabInstance: {fileID: 4184432409914459275}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &9175319240651265492
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 563830851}
+    m_Modifications:
+    - target: {fileID: 244619828484571977, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: _challengeId
+      value: challenge.game3.bets.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 970961966911820369, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: _challengeId
+      value: challenge.game3.bets.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1308006181672654338, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: screenToShowId
+      value: screen.game3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1667087958123116711, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a915d549a0ed70f46bb5f67bdb47b59d, type: 3}
+    - target: {fileID: 1836378543289343954, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: m_text
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 2001210305525952594, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2001210305525952594, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2034048143804040986, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: screenToShowId
+      value: screen.game3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2323577336553223892, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2323577336553223892, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2323577336553223892, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2323577336553223892, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2412701870904734555, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: m_text
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 2536338455584889912, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: _challengeId
+      value: challenge.game3.bets.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2552309609788799223, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2794346048861957259, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: _challengeId
+      value: challenge.game3.bets.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2943980172640550291, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: _challengeId
+      value: challenge.game3.bets.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3255679014713052448, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: _challengeId
+      value: challenge.game3.bets.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3324674627610978252, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3324674627610978252, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3324674627610978252, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3324674627610978252, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3415768258347065923, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: m_text
+      value: 700
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715673542319772126, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715673542319772126, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4866976299395106867, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a915d549a0ed70f46bb5f67bdb47b59d, type: 3}
+    - target: {fileID: 4884411904677461598, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: m_text
+      value: 10 000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5084192563690186390, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: screenToShowId
+      value: screen.game3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5590767707216042283, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a915d549a0ed70f46bb5f67bdb47b59d, type: 3}
+    - target: {fileID: 5608237230014050118, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: m_text
+      value: 3 000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5694346589679698628, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: m_Name
+      value: GoalsContent (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5694346589679698628, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5723490915193651398, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5723490915193651398, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6326791057311118301, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: _challengeId
+      value: challenge.game3.spins.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8401280133093492288, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8401280133093492288, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8401280133093492288, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8401280133093492288, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8710267846065886953, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8710267846065886953, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8710267846065886953, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8710267846065886953, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8710267846065886953, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8710267846065886953, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8710267846065886953, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8710267846065886953, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1600
+      objectReference: {fileID: 0}
+    - target: {fileID: 8710267846065886953, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 600
+      objectReference: {fileID: 0}
+    - target: {fileID: 8710267846065886953, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8710267846065886953, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8710267846065886953, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8710267846065886953, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8710267846065886953, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8710267846065886953, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8710267846065886953, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8710267846065886953, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8710267846065886953, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8710267846065886953, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8710267846065886953, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8710267846065886953, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8756730861213777332, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: _challengeId
+      value: challenge.game3.spins.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8921465523148313303, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: m_text
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8967591395958902023, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: _challengeId
+      value: challenge.game3.spins.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
@@ -796,7 +1159,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 244619828484571977, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: _challengeId
-      value: challenge.game1.bets.1000
+      value: challenge.game1.bets.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 970961966911820369, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: _challengeId
+      value: challenge.game1.bets.2
       objectReference: {fileID: 0}
     - target: {fileID: 1308006181672654338, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: screenToShowId
@@ -834,33 +1201,41 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2536338455584889912, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: _challengeId
+      value: challenge.game1.bets.2
+      objectReference: {fileID: 0}
     - target: {fileID: 2552309609788799223, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2794346048861957259, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: _challengeId
+      value: challenge.game1.bets.2
+      objectReference: {fileID: 0}
     - target: {fileID: 2943980172640550291, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: _challengeId
-      value: challenge.game1.bets.1000
+      value: challenge.game1.bets.1
       objectReference: {fileID: 0}
     - target: {fileID: 3255679014713052448, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: _challengeId
-      value: challenge.game1.bets.1000
+      value: challenge.game1.bets.1
       objectReference: {fileID: 0}
     - target: {fileID: 3324674627610978252, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3324674627610978252, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3324674627610978252, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 800
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3324674627610978252, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -500
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3415768258347065923, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: m_text
@@ -868,15 +1243,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4715673542319772126, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4715673542319772126, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4884411904677461598, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: m_text
+      value: 10 000
       objectReference: {fileID: 0}
     - target: {fileID: 5694346589679698628, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: m_Name
       value: GoalsContent
+      objectReference: {fileID: 0}
+    - target: {fileID: 5694346589679698628, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5723490915193651398, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: m_AnchorMax.x
@@ -888,7 +1271,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6326791057311118301, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: _challengeId
-      value: challenge.game1.spins.20
+      value: challenge.game1.spins.1
       objectReference: {fileID: 0}
     - target: {fileID: 7433812104237683632, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: m_IsActive
@@ -896,7 +1279,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7581431786546168488, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8401280133093492288, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: m_AnchorMax.y
@@ -932,7 +1315,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8710267846065886953, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8710267846065886953, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: m_AnchorMin.x
@@ -940,7 +1323,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8710267846065886953, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8710267846065886953, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: m_SizeDelta.x
@@ -980,11 +1363,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8710267846065886953, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 1200
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8710267846065886953, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -393.84473
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8710267846065886953, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1000,11 +1383,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8756730861213777332, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: _challengeId
-      value: challenge.game1.spins.20
+      value: challenge.game1.spins.1
       objectReference: {fileID: 0}
     - target: {fileID: 8967591395958902023, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: _challengeId
-      value: challenge.game1.spins.20
+      value: challenge.game1.spins.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
@@ -1122,89 +1505,149 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 563830851}
     m_Modifications:
+    - target: {fileID: 244619828484571977, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: _challengeId
+      value: challenge.game2.bets.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 970961966911820369, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: _challengeId
+      value: challenge.game2.bets.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1308006181672654338, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: screenToShowId
+      value: screen.game2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1667087958123116711, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 487c22fe329c03a4f98e2bd6077a2934, type: 3}
     - target: {fileID: 2001210305525952594, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2001210305525952594, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2034048143804040986, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: screenToShowId
+      value: screen.game2
       objectReference: {fileID: 0}
     - target: {fileID: 2323577336553223892, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2323577336553223892, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2323577336553223892, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 800
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2323577336553223892, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -300
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2412701870904734555, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: m_text
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 2536338455584889912, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: _challengeId
+      value: challenge.game2.bets.2
       objectReference: {fileID: 0}
     - target: {fileID: 2552309609788799223, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 600
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2794346048861957259, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: _challengeId
+      value: challenge.game2.bets.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2943980172640550291, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: _challengeId
+      value: challenge.game2.bets.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3255679014713052448, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: _challengeId
+      value: challenge.game2.bets.1
       objectReference: {fileID: 0}
     - target: {fileID: 3324674627610978252, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3324674627610978252, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3324674627610978252, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 800
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3324674627610978252, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -500
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3415768258347065923, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: m_text
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 4715673542319772126, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4715673542319772126, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4866976299395106867, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 487c22fe329c03a4f98e2bd6077a2934, type: 3}
+    - target: {fileID: 5084192563690186390, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: screenToShowId
+      value: screen.game2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5590767707216042283, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 487c22fe329c03a4f98e2bd6077a2934, type: 3}
     - target: {fileID: 5694346589679698628, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: m_Name
       value: GoalsContent (1)
       objectReference: {fileID: 0}
     - target: {fileID: 5694346589679698628, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5723490915193651398, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5723490915193651398, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6326791057311118301, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: _challengeId
+      value: challenge.game2.spins.1
       objectReference: {fileID: 0}
     - target: {fileID: 8401280133093492288, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8401280133093492288, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8401280133093492288, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 800
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8401280133093492288, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -100
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8710267846065886953, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: m_Pivot.x
@@ -1224,7 +1667,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8710267846065886953, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8710267846065886953, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: m_AnchorMin.x
@@ -1232,7 +1675,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8710267846065886953, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8710267846065886953, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: m_SizeDelta.x
@@ -1272,11 +1715,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8710267846065886953, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 3300
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8710267846065886953, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -393.84473
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8710267846065886953, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1289,6 +1732,18 @@ PrefabInstance:
     - target: {fileID: 8710267846065886953, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8756730861213777332, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: _challengeId
+      value: challenge.game2.spins.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8921465523148313303, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: m_text
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 8967591395958902023, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}
+      propertyPath: _challengeId
+      value: challenge.game2.spins.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d6a24730f395467eaf8939d52008bcc, type: 3}

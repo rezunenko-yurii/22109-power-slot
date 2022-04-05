@@ -31,12 +31,17 @@ namespace ConditionsImp
         protected override void OnEnableInitialized()
         {
             base.OnEnableInitialized();
-            
+
+            SetTextVariant();
+        }
+
+        private void SetTextVariant()
+        {
             if (_challenge.IsFulFilled)
             {
-                textfield.text = "Fulfilled";
+                textfield.text = "24:00:00";
             }
-            else if(!_challenge.IsStarted || _timer.IsExpired)
+            else if (!_challenge.IsStarted || _timer.IsExpired)
             {
                 textfield.text = "24:00:00";
             }
@@ -61,14 +66,7 @@ namespace ConditionsImp
         {
             RemoveListeners();
 
-            if (_challenge.IsFulFilled)
-            {
-                textfield.text = "Fulfilled";
-            }
-            else
-            {
-                textfield.text = "24:00:00";
-            }
+            SetTextVariant();
         }
 
         protected override void RemoveListeners()

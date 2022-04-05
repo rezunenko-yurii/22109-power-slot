@@ -1,4 +1,6 @@
 [
   {"Id": "filter.screen.game1", "Type": "ScreensFilter", "ScreenIds": ["screen.game1"]},
-  {"Id": "filter.screen.game2", "Type": "ScreensFilter", "ScreenIds": ["screen.game2"]}
+  {"Id": "filter.screen.game2", "Type": "ScreensFilter", "ScreenIds": ["screen.game2"]},
+  {"Id": "filter.screen.game3", "Type": "ScreensFilter", "ScreenIds": ["screen.game3"]},
+  {"Id": "filter.screen.game4", "Type": "ScreensFilter", "ScreenIds": ["screen.game4"]}
 ]

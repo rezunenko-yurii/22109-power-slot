@@ -9,17 +9,11 @@ public class AdvancedSlider : AdvancedMonoBehaviour
     protected void ChangeSliderValue(int currentValue, int maxValue)
     {
         int percent = HowManyPercentIsOneNumberFromAnother(currentValue, maxValue);
-        //float normalized = NormalizeValue(percent, 0, 100);
         float sliderNewValue = SubtractPercentageFromTheNumber(100, percent);
             
         Debug.Log($"{nameof(ExperienceSlider)} {nameof(ChangeSliderValue)} percent={percent} sliderNewValue={sliderNewValue}");
             
         _slider.value = sliderNewValue;
-    
-        /*if (sliderNewValue == 50)
-            {
-                _slider.value = 0;
-            }*/
     }
         
     public float NormalizeValue(float currentValue, float lowerValue, float higherValue)

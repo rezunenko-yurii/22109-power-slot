@@ -1,14 +1,77 @@
 [
   {
-    "Id": "challenge.game1.spins.20",
-    "TaskId": "task.game1.spins.20",
-    "ReseterId": "reseter.game1.spins.20",
-    "RewardId": "bundle.challenge.game1.spins.20"
+    "Id": "challenge.game1.spins.1",
+    "TaskId": "task.game1.spins.1",
+    "ReseterId": "reseter.game1.spins.1",
+    "RewardId": "bundle.challenge.game1.spins.1"
   },
   {
-    "Id": "challenge.game1.bets.1000",
-    "TaskId": "task.game1.bets.1000",
-    "ReseterId": "reseter.game1.bets.1000",
-    "RewardId": "bundle.challenge.game1.bets.1000"
+    "Id": "challenge.game1.bets.1",
+    "TaskId": "task.game1.bets.1",
+    "ReseterId": "reseter.game1.bets.1",
+    "RewardId": "bundle.challenge.game1.bets.1"
+  },
+  {
+    "Id": "challenge.game1.bets.2",
+    "TaskId": "task.game1.bets.2",
+    "ReseterId": "reseter.game1.bets.2",
+    "RewardId": "bundle.challenge.game1.bets.2"
+  },
+
+  {
+    "Id": "challenge.game2.spins.1",
+    "TaskId": "task.game2.spins.1",
+    "ReseterId": "reseter.game2.spins.1",
+    "RewardId": "bundle.challenge.game2.spins.1"
+  },
+  {
+    "Id": "challenge.game2.bets.1",
+    "TaskId": "task.game2.bets.1",
+    "ReseterId": "reseter.game2.bets.1",
+    "RewardId": "bundle.challenge.game2.bets.1"
+  },
+  {
+    "Id": "challenge.game2.bets.2",
+    "TaskId": "task.game2.bets.2",
+    "ReseterId": "reseter.game2.bets.2",
+    "RewardId": "bundle.challenge.game2.bets.2"
+  },
+
+  {
+    "Id": "challenge.game3.spins.1",
+    "TaskId": "task.game3.spins.1",
+    "ReseterId": "reseter.game3.spins.1",
+    "RewardId": "bundle.challenge.game3.spins.1"
+  },
+  {
+    "Id": "challenge.game3.bets.1",
+    "TaskId": "task.game3.bets.1",
+    "ReseterId": "reseter.game3.bets.1",
+    "RewardId": "bundle.challenge.game3.bets.1"
+  },
+  {
+    "Id": "challenge.game3.bets.2",
+    "TaskId": "task.game3.bets.2",
+    "ReseterId": "reseter.game3.bets.2",
+    "RewardId": "bundle.challenge.game3.bets.2"
+  },
+
+  {
+    "Id": "challenge.game4.spins.1",
+    "TaskId": "task.game4.spins.1",
+    "ReseterId": "reseter.game4.spins.1",
+    "RewardId": "bundle.challenge.game4.spins.1"
+  },
+  {
+    "Id": "challenge.game4.bets.1",
+    "TaskId": "task.game4.bets.1",
+    "ReseterId": "reseter.game4.bets.1",
+    "RewardId": "bundle.challenge.game4.bets.1"
+  },
+  {
+    "Id": "challenge.game4.bets.2",
+    "TaskId": "task.game4.bets.2",
+    "ReseterId": "reseter.game4.bets.2",
+    "RewardId": "bundle.challenge.game4.bets.2"
   }
 ]
