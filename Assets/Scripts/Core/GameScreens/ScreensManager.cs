@@ -22,7 +22,7 @@ namespace Core.GameScreens
             {
                 base.Show(id);
             }
-            else
+            else if (!lastScreen.Id.Equals(id))
             {
                 _newScreenId = id;
                 Hide(lastScreen);
