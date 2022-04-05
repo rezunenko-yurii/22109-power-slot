@@ -25,22 +25,22 @@ namespace Installers
             
             SignalEvents datas = new SignalEvents();
             datas.Init(subscribersConfig);
-            Container.Bind<SignalEvents>().FromInstance(datas).AsSingle();
+            _signalsHelper.Container.Bind<SignalEvents>().FromInstance(datas).AsSingle();
             
-            Container.Bind<Moneys>().AsSingle().NonLazy();
-            Container.Bind<Products>().AsSingle().OnInstantiated<Products>((_, products) => products.Init(productConfig)).NonLazy();
+            _signalsHelper.Container.Bind<Moneys>().AsSingle().NonLazy();
+            _signalsHelper.Container.Bind<Products>().AsSingle().OnInstantiated<Products>((_, products) => products.Init(productConfig)).NonLazy();
 
-            var productPackProvider = Container.Instantiate<Bundles>();
-            productPackProvider.Init(productPackConfig);
-            Container.Bind<Bundles>().FromInstance(productPackProvider).NonLazy();
+            var bundles = Container.Instantiate<Bundles>();
+            bundles.Init(productPackConfig);
+            _signalsHelper.Container.Bind<Bundles>().FromInstance(bundles).NonLazy();
             
-            var productPacksProvider = Container.Instantiate<ProductBundlesSets>();
-            productPacksProvider.Init(productPacksConfig);
-            Container.Bind<ProductBundlesSets>().FromInstance(productPacksProvider).NonLazy();
+            var bundlesSets = Container.Instantiate<ProductBundlesSets>();
+            bundlesSets.Init(productPacksConfig);
+            _signalsHelper.Container.Bind<ProductBundlesSets>().FromInstance(bundlesSets).NonLazy();
             
             Merchandises merchandises = Container.Instantiate<Merchandises>();
             merchandises.Init(merchandisesConfig);
-            Container.Bind<Merchandises>().FromInstance(merchandises).NonLazy();
+            _signalsHelper.Container.Bind<Merchandises>().FromInstance(merchandises).NonLazy();
         }
         
         private void InstallSignals()

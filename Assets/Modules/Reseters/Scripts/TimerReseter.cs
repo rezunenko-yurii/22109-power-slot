@@ -16,7 +16,6 @@ namespace Modules.Reseters.Scripts
         public void Init()
         {
             Timer = (MemoryTimer) _timers.GetObject(TimerId);
-            Timer.Init();
         }
 
         public void StartObserving()

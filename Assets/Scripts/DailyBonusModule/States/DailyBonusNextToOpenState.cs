@@ -34,7 +34,7 @@ public class DailyBonusNextToOpenState : DailyBonusState
         return currentDay == itemDay && passedDay == 0;
     }
     
-    private void OnCounting(int seconds)
+    private void OnCounting(double seconds)
     {
         OnCounting(TimeSpan.FromSeconds(seconds));
     }

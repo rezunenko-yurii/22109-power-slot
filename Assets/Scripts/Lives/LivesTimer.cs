@@ -23,7 +23,7 @@ namespace Lives
             _livesManager.Timer.Counting -= OnCounting;
         }
         
-        private void OnCounting(int seconds)
+        private void OnCounting(double seconds)
         {
             OnCounting(TimeSpan.FromSeconds(seconds));
         }

@@ -24,7 +24,7 @@ namespace Modules.Timers.Scripts
         public void Resume()
         {
             var a = LeftTimeSpan();
-            Start(a.Seconds);
+            Start(a.TotalSeconds);
         }
         
         public void StartFromBeginning()

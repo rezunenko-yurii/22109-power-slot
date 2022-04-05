@@ -45,7 +45,7 @@ public class WheelTimerController : AdvancedMonoBehaviour
         textMeshPro.gameObject.SetActive(true);
     }
     
-    private void UpdateText(int seconds)
+    private void UpdateText(double seconds)
     {
         UpdateText(TimeSpan.FromSeconds(seconds));
     }

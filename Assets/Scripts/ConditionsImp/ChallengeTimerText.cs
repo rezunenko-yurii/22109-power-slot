@@ -79,7 +79,7 @@ namespace ConditionsImp
             _timer.Over -= RemoveListeners;
         }
         
-        private void UpdateText(int seconds)
+        private void UpdateText(double seconds)
         {
             UpdateText(TimeSpan.FromSeconds(seconds));
         }

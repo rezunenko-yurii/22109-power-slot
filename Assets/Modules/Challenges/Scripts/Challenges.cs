@@ -6,13 +6,15 @@ namespace Modules.Challenges.Scripts
 {
     public class Challenges : ResourcesLoader<Challenge>
     {
+        [Inject] private DiContainer _container;
         [Inject] private Modules.Tasks.Tasks _tasks;
         [Inject] private Reseters.Scripts.Reseters _reseters;
-        
+
         protected override string FolderName { get; }
         protected override void HandleItem(JToken jToken)
         {
             var challenge = jToken.ToObject<Challenge>();
+            _container.Inject(challenge);
             
             var task = _tasks.GetObject(challenge.TaskId);
             challenge.Task = task;

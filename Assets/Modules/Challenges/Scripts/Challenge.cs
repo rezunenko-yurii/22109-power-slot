@@ -1,12 +1,17 @@
 ﻿using System;
 using Core.DataSavers;
+using Core.Finances.Store.Products;
+using Core.Signals.GameSignals;
 using Modules.Reseters.Scripts;
 using Modules.Tasks;
+using Zenject;
 
 namespace Modules.Challenges.Scripts
 {
     public class Challenge : IChallenge
     {
+        [Inject] private SignalsHelper _signalsHelper;
+        [Inject] private Bundles _bundles;
         public event Action Fulfilled;
         
         public bool IsFulFilled => _dataSaver.Value;
@@ -36,6 +41,9 @@ namespace Modules.Challenges.Scripts
             Task.Started += OnTaskStarted;
             Task.Completed += OnFulfilled;
             
+            Reseter.Activated += Reset;
+            Reseter.StartObserving();
+            Reseter.Continue();
             
             if (Task.IsStarted)
             {
@@ -44,10 +52,6 @@ namespace Modules.Challenges.Scripts
                     Reset();
                 }
             }
-
-            Reseter.Activated += Reset;
-            Reseter.StartObserving();
-            Reseter.Continue();
         }
 
         private void OnTaskStarted()
@@ -72,6 +76,10 @@ namespace Modules.Challenges.Scripts
             Reseter.Activated -= Reset;
             
             Fulfilled?.Invoke();
+            
+            // TODO create event on challenge fulfilled do event notifier 
+            var bundle = _bundles.GetObject(RewardId);
+            _signalsHelper.Fire(typeof(Won<Bundle>), bundle);
         }
     }
 }

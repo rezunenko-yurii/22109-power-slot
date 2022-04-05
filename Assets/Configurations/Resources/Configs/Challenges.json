@@ -1,8 +1,14 @@
 [
   {
     "Id": "challenge.game1.spins.20",
-    "RewardId": "game1.spins.20",
     "TaskId": "task.game1.spins.20",
-    "ReseterId": "reseter.game1.spins.20"
+    "ReseterId": "reseter.game1.spins.20",
+    "RewardId": "bundle.challenge.game1.spins.20"
+  },
+  {
+    "Id": "challenge.game1.bets.1000",
+    "TaskId": "task.game1.bets.1000",
+    "ReseterId": "reseter.game1.bets.1000",
+    "RewardId": "bundle.challenge.game1.bets.1000"
   }
 ]

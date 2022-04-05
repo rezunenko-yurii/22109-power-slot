@@ -9,9 +9,9 @@ namespace Modules.Timers.Scripts
         
         public event Action Started;
         public event Action Over;
-        public event Action<int> Counting;
+        public event Action<double> Counting;
         
-        private int _secondsLeft = 0;
+        private double _secondsLeft = 0;
         public bool HasTime => _secondsLeft > 0;
 
         public virtual void Init() { }
@@ -26,7 +26,7 @@ namespace Modules.Timers.Scripts
         {
             _tickManager.Remove(OnTick);
         }
-        protected virtual void Start(int seconds)
+        protected virtual void Start(double seconds)
         {
             if (HasTime)
             {

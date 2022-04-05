@@ -52,14 +52,14 @@ namespace Modules.Tasks
             }
             
             int clamp = Mathf.Clamp(CurrentAmount + value, 0, TargetAmount);
+            TryInvokeStarted(clamp);
             OnValueChanged(clamp);
-            TryInvokeStarted();
             TryInvokeCompleted();
         }
 
-        private void TryInvokeStarted()
+        private void TryInvokeStarted(int newValue)
         {
-            if (CurrentAmount == 1)
+            if (CurrentAmount == 0 && newValue > 0)
             {
                 Started?.Invoke();
             }

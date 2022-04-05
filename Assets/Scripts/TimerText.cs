@@ -60,7 +60,7 @@ public abstract class TimerText : AdvancedMonoBehaviour
         }
     }
     
-    private void SetTimerText(int seconds)
+    private void SetTimerText(double seconds)
     {
         SetTimerText(TimeSpan.FromSeconds(seconds));
     }
