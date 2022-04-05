@@ -320,6 +320,10 @@ PrefabInstance:
       propertyPath: m_Interactable
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 684354259184480271, guid: 28f0217cb73f54d4da18ced8168f0e30, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.a
+      value: 0.78431374
+      objectReference: {fileID: 0}
     - target: {fileID: 1444035594615005478, guid: 28f0217cb73f54d4da18ced8168f0e30, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -453,6 +457,10 @@ PrefabInstance:
     - target: {fileID: 6814116424115940630, guid: 084ef79189a522c499409d2ee95ae2c3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6814116424115940631, guid: 084ef79189a522c499409d2ee95ae2c3, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.a
+      value: 0.78431374
       objectReference: {fileID: 0}
     - target: {fileID: 6814116424115940840, guid: 084ef79189a522c499409d2ee95ae2c3, type: 3}
       propertyPath: m_Sprite
@@ -716,6 +724,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3933129985964227200}
     m_Modifications:
+    - target: {fileID: 3537730061253840301, guid: 821fc94d4d2d2794095f542f51d0f612, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.a
+      value: 0.78431374
+      objectReference: {fileID: 0}
     - target: {fileID: 3981425545963069775, guid: 821fc94d4d2d2794095f542f51d0f612, type: 3}
       propertyPath: m_Name
       value: ChallengesScreenButton
@@ -1091,6 +1103,10 @@ PrefabInstance:
     - target: {fileID: 3669316589853437766, guid: 302db2c27ec9cba46bcb8bdc3a9cd32b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4055873019297792160, guid: 302db2c27ec9cba46bcb8bdc3a9cd32b, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.a
+      value: 0.78431374
       objectReference: {fileID: 0}
     - target: {fileID: 4472369967011785794, guid: 302db2c27ec9cba46bcb8bdc3a9cd32b, type: 3}
       propertyPath: m_Name

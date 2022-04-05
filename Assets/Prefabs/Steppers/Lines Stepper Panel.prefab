@@ -55,6 +55,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0.9
       objectReference: {fileID: 0}
+    - target: {fileID: 4160779151087222256, guid: cc3ce36dd68614680aff9bdbb308c2b1, type: 3}
+      propertyPath: m_fontSize
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 4160779151087222256, guid: cc3ce36dd68614680aff9bdbb308c2b1, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 5284721191811302170, guid: cc3ce36dd68614680aff9bdbb308c2b1, type: 3}
       propertyPath: m_Enabled
       value: 0

@@ -303,6 +303,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9170762677130026305, guid: 0cac382e1987a47b3a9fd505193c1485, type: 3}
+      propertyPath: on
+      value: 
+      objectReference: {fileID: 21300000, guid: f97897e8a3f0f4c83a9b301c4d7c2260, type: 3}
+    - target: {fileID: 9170762677130026305, guid: 0cac382e1987a47b3a9fd505193c1485, type: 3}
+      propertyPath: off
+      value: 
+      objectReference: {fileID: 21300000, guid: 2b08d47ab49cb4ae0bbacedcc66f0380, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0cac382e1987a47b3a9fd505193c1485, type: 3}
 --- !u!224 &2915718506607177740 stripped
@@ -317,6 +325,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3316437439165127471}
     m_Modifications:
+    - target: {fileID: 2244238813758825368, guid: 283984be0b0e05e4a954ca2e82feac49, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.a
+      value: 0.78431374
+      objectReference: {fileID: 0}
     - target: {fileID: 2244238813758825369, guid: 283984be0b0e05e4a954ca2e82feac49, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -347,7 +359,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2244238813758825369, guid: 283984be0b0e05e4a954ca2e82feac49, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 279
+      value: 375
       objectReference: {fileID: 0}
     - target: {fileID: 2244238813758825369, guid: 283984be0b0e05e4a954ca2e82feac49, type: 3}
       propertyPath: m_SizeDelta.y
@@ -387,7 +399,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2244238813758825369, guid: 283984be0b0e05e4a954ca2e82feac49, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -54
+      value: -45
       objectReference: {fileID: 0}
     - target: {fileID: 2244238813758825369, guid: 283984be0b0e05e4a954ca2e82feac49, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -419,22 +431,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3316437439165127471}
     m_Modifications:
-    - target: {fileID: 494117037701622349, guid: e7c9196092706234cb7af129db89f818, type: 3}
-      propertyPath: m_fontSize
-      value: 60
-      objectReference: {fileID: 0}
-    - target: {fileID: 494117037701622349, guid: e7c9196092706234cb7af129db89f818, type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-    - target: {fileID: 494117037701622349, guid: e7c9196092706234cb7af129db89f818, type: 3}
-      propertyPath: m_fontSizeBase
-      value: 60
-      objectReference: {fileID: 0}
-    - target: {fileID: 494117037701622349, guid: e7c9196092706234cb7af129db89f818, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 5485240020861249376, guid: e7c9196092706234cb7af129db89f818, type: 3}
       propertyPath: m_Name
       value: MoneyWonPanel
@@ -513,7 +509,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5485240020861249377, guid: e7c9196092706234cb7af129db89f818, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -55
+      value: -45
       objectReference: {fileID: 0}
     - target: {fileID: 5485240020861249377, guid: e7c9196092706234cb7af129db89f818, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -542,14 +538,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3316437439165127471}
     m_Modifications:
-    - target: {fileID: 2193888722726726488, guid: de246318bb44645fa8805d041ad881ac, type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-    - target: {fileID: 2193888722726726488, guid: de246318bb44645fa8805d041ad881ac, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 6104148001703453760, guid: de246318bb44645fa8805d041ad881ac, type: 3}
       propertyPath: m_Name
       value: BetsStepperPanel
@@ -652,14 +640,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3316437439165127471}
     m_Modifications:
-    - target: {fileID: 3187868084913754074, guid: 1248b634f521b47c8960962af2f6c4e5, type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-    - target: {fileID: 3187868084913754074, guid: 1248b634f521b47c8960962af2f6c4e5, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 7420134816235618498, guid: 1248b634f521b47c8960962af2f6c4e5, type: 3}
       propertyPath: m_Name
       value: Lines Stepper Panel
@@ -980,22 +960,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5309876797241696110, guid: 191e8cadbe3b42e4c8a604704f35dc53, type: 3}
-      propertyPath: m_fontSize
-      value: 60
-      objectReference: {fileID: 0}
-    - target: {fileID: 5309876797241696110, guid: 191e8cadbe3b42e4c8a604704f35dc53, type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-    - target: {fileID: 5309876797241696110, guid: 191e8cadbe3b42e4c8a604704f35dc53, type: 3}
-      propertyPath: m_fontSizeBase
-      value: 60
-      objectReference: {fileID: 0}
-    - target: {fileID: 5309876797241696110, guid: 191e8cadbe3b42e4c8a604704f35dc53, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 191e8cadbe3b42e4c8a604704f35dc53, type: 3}
 --- !u!224 &6965076411271301961 stripped

@@ -56,6 +56,7 @@ namespace SlotsGame.Scripts
             if (freeSpins > 0)
             {
                 _isSpinning = true;
+                _signalHelper.Fire<Core.GameSignals.UserInputPause>();
                 
                 _effectsManager.AddToQuery(EffectsTypes.FreeSpins);
                 _autoSpin.TransitionTo(AutoSpinType.ForcedAmount, (int) freeSpins);

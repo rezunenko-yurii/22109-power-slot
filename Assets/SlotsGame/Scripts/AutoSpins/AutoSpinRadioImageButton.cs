@@ -10,7 +10,6 @@ namespace SlotsGame.Scripts.AutoSpins
     {
         [Inject] private AutoSpin _autoSpin;
         [Inject] private SpinPayer _spinPayer;
-        [SerializeField] private SpinButton spinButton;
 
         private void AutoSpinControllerOnStateChanged(AutoSpinType type)
         {

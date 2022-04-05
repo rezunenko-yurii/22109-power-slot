@@ -169,7 +169,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4853239709048231861, guid: 486234d96e2ac814fbc9240d4586b8d4, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -33
+      value: -36.2
       objectReference: {fileID: 0}
     - target: {fileID: 4853239709048231861, guid: 486234d96e2ac814fbc9240d4586b8d4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -189,11 +189,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5387440327471096061, guid: 486234d96e2ac814fbc9240d4586b8d4, type: 3}
       propertyPath: m_fontSize
-      value: 60
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 5387440327471096061, guid: 486234d96e2ac814fbc9240d4586b8d4, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.24705884
+      objectReference: {fileID: 0}
+    - target: {fileID: 5387440327471096061, guid: 486234d96e2ac814fbc9240d4586b8d4, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.003921569
+      objectReference: {fileID: 0}
+    - target: {fileID: 5387440327471096061, guid: 486234d96e2ac814fbc9240d4586b8d4, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.8196079
       objectReference: {fileID: 0}
     - target: {fileID: 5387440327471096061, guid: 486234d96e2ac814fbc9240d4586b8d4, type: 3}
       propertyPath: m_fontSizeBase
-      value: 60
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 5387440327471096061, guid: 486234d96e2ac814fbc9240d4586b8d4, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4282319313
       objectReference: {fileID: 0}
     - target: {fileID: 5387440327471096061, guid: 486234d96e2ac814fbc9240d4586b8d4, type: 3}
       propertyPath: m_HorizontalAlignment
