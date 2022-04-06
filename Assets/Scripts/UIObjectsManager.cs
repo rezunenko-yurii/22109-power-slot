@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using Core;
 using UI;
-using UnityEngine;
 using Zenject;
 
 public class UIObjectsManager<TUIObject,TResourcesLoader> : AdvancedMonoBehaviour 
@@ -103,6 +102,12 @@ public class UIObjectsManager<TUIObject,TResourcesLoader> : AdvancedMonoBehaviou
         return l != null && l.Id.Equals(id);
     }
     
+    public void Hide(string id)
+    {
+        var uiobject = Actives.FirstOrDefault(u => u.Id.Equals(id));
+        Hide(uiobject);
+    }
+    
     public void Hide(TUIObject uiObject)
     {
         Actives.Remove(uiObject);
@@ -127,7 +132,7 @@ public class UIObjectsManager<TUIObject,TResourcesLoader> : AdvancedMonoBehaviou
 
         if (uiObject == null)
         {
-            Debug.Log($"{name} {nameof(TryHideLast)} there is not last popup");
+            //Debug.Log($"{name} {nameof(TryHideLast)} there is not last popup");
             return;
         }
         Hide(uiObject);

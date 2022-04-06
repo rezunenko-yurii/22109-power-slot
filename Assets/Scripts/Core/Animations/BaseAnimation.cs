@@ -17,7 +17,7 @@ namespace Core.Animations
 
         public virtual void Play()
         {
-            Debug.Log($"{GetType()} {nameof(Play)}");
+            //Debug.Log($"{GetType()} {nameof(Play)}");
             IsPlaying = true;
             SetStart();
             CreateTween();
@@ -25,7 +25,7 @@ namespace Core.Animations
 
         public virtual void PlayImmediate()
         {
-            Debug.Log($"{GetType()} {nameof(PlayImmediate)}");
+            //Debug.Log($"{GetType()} {nameof(PlayImmediate)}");
             SetEnd();
             OnDone();
         }
@@ -36,7 +36,7 @@ namespace Core.Animations
         
         protected void OnDone()
         {
-            Debug.Log($"{GetType()} {nameof(OnDone)}");
+            //Debug.Log($"{GetType()} {nameof(OnDone)}");
             
             IsPlaying = false;
             Ez?.Kill();

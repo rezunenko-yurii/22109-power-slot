@@ -14,7 +14,7 @@ namespace SlotsGame.Scripts.Effects
 
         public void Play()
         {
-            Debug.Log($"{nameof(EffectsManager)} {nameof(Play)}");
+            //Debug.Log($"{nameof(EffectsManager)} {nameof(Play)}");
             
             if (_query.Count > 0)
             {
@@ -23,7 +23,7 @@ namespace SlotsGame.Scripts.Effects
             }
             else
             {
-                Debug.Log($"{nameof(EffectsManager)} {nameof(Play)} All Animations Played");
+                //Debug.Log($"{nameof(EffectsManager)} {nameof(Play)} All Animations Played");
                 Completed?.Invoke();
             }
         }
@@ -49,7 +49,7 @@ namespace SlotsGame.Scripts.Effects
 
         private void OnPlayed(PlayableDirector obj)
         {
-            Debug.Log($"{nameof(EffectsManager)} {obj.name} {nameof(OnPlayed)}");
+            //Debug.Log($"{nameof(EffectsManager)} {obj.name} {nameof(OnPlayed)}");
             
             obj.stopped -= OnPlayed;
             Play();

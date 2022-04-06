@@ -1,5 +1,6 @@
 using Core.Popups;
 using UI;
+using UnityEngine;
 using Zenject;
 
 namespace Core.GameScreens
@@ -9,33 +10,56 @@ namespace Core.GameScreens
         [Inject] private PopupsManager _popupsManager;
 
         public GameScreen Current { get; private set; }
-
-        private GameScreen lastScreen;
-        private string _newScreenId;
+        
+        //private string _nextId;
+        private (string, string) scrs;
         
         public override void Show(string id)
         {
-            _popupsManager.TryHideLast();
+            if (scrs.Item2 != null)
+            {
+                return;
+            }
             
-            lastScreen = GetLast();
-            if (ReferenceEquals(lastScreen, null))
+            _popupsManager.TryHideLast();
+            string currentId = GetLastId();
+            
+            if (string.IsNullOrEmpty(currentId))
             {
                 base.Show(id);
             }
-            else if (!lastScreen.Id.Equals(id))
+            else if (!currentId.Equals(id))
             {
-                _newScreenId = id;
-                Hide(lastScreen);
+                scrs = (currentId, id);
+                Hide(currentId);
             }
+            
+            
+            /*string currentId = GetLastId();
+            if (currentId == null )
+            {
+                Debug.Log($"Show screen {id}");
+                _nextId = null;
+                base.Show(id);
+            }
+            else if (!currentId.Equals(id))
+            {
+                Debug.Log($"Show new screen {id} / hide {currentId}");
+                _nextId = id;
+                Hide(currentId);
+            }*/
         }
 
         protected override void OnHidden(UIObject uiObject)
         {
             base.OnHidden(uiObject);
-            if (!ReferenceEquals(_newScreenId, null))
+            string next = scrs.Item2;
+            if (next != null)
             {
-                base.Show(_newScreenId);
-                _newScreenId = null;
+                Debug.Log($"Hidden screen {uiObject.Id} / try show {next}");
+                scrs = (null, null);
+                base.Show(next);
+                //_nextId = null;
             }
         }
 

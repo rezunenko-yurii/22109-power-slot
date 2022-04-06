@@ -13,7 +13,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3481308164852439397, guid: 74af471197228964f946b2925b3887dd, type: 3}
       propertyPath: m_Alpha
-      value: 0
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 8244086836426909316, guid: 74af471197228964f946b2925b3887dd, type: 3}
       propertyPath: m_Pivot.x
@@ -310,6 +310,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1511213632497664774}
     m_Modifications:
+    - target: {fileID: 1005832713269155684, guid: 4e15cd2bd241d9c4d93ebd3aed923b15, type: 3}
+      propertyPath: url
+      value: https://guendalinaapp.com/contact-us
+      objectReference: {fileID: 0}
     - target: {fileID: 1405562450264540832, guid: 4e15cd2bd241d9c4d93ebd3aed923b15, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -325,6 +329,10 @@ PrefabInstance:
     - target: {fileID: 1405562450264540832, guid: 4e15cd2bd241d9c4d93ebd3aed923b15, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2002990921690246255, guid: 4e15cd2bd241d9c4d93ebd3aed923b15, type: 3}
+      propertyPath: url
+      value: https://guendalinaapp.com/privacy-policy
       objectReference: {fileID: 0}
     - target: {fileID: 2579432713461471266, guid: 4e15cd2bd241d9c4d93ebd3aed923b15, type: 3}
       propertyPath: m_AnchorMax.y

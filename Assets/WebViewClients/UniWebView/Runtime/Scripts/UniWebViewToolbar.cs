@@ -40,14 +40,14 @@ namespace WebSdk.WebViewClients.UniWebView.Runtime.Scripts
         
         private float GetHeightСoefficient()
         {
-            return Screen.width > Screen.height ? 0.15f : 0.1f;
+            return Screen.width > Screen.height ? 0.1f : 0.05f;
         }
 
         public float GetHeight()
         {
             if (IsActive())
             {
-                return Screen.safeArea.height * GetHeightСoefficient();
+                return Screen.safeArea.height*GetHeightСoefficient();
             }
             else
             {

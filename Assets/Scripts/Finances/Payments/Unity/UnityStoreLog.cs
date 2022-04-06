@@ -72,7 +72,7 @@ namespace Finances.Payments.Unity
                 _ => throw new ArgumentOutOfRangeException(nameof(error), error, null)
             };
             
-            Debug.LogError($"{nameof(UnityStoreListener)} {nameof(LogInitializeFailed)} Billing failed to initialize !!!!!!!!!! \n Reason={messega}");
+            Debug.LogWarning($"-------------- {nameof(UnityStoreListener)} {nameof(LogInitializeFailed)} Billing failed to initialize !!!!!!!!!! \n Reason={messega}");
         }
         
         public void LogLastPurchaseErrorDescription(ITransactionHistoryExtensions purchaseHistory)

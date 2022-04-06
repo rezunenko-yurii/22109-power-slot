@@ -31,7 +31,7 @@ namespace SlotsGame.Scripts.Combinations
         
         public void Shuffle()
         {
-            Debug.Log("Shuffle");
+            //Debug.Log("Shuffle");
             string s = "";
             for (int row = 0; row < _config.gridSize.x; row++)
             {
@@ -40,7 +40,7 @@ namespace SlotsGame.Scripts.Combinations
                     grid[row, col] = GetRandom();
                     s += $" {grid[row, col].SlotSprite.name}";
                 }
-                Debug.Log(s);
+                //Debug.Log(s);
                 s = "";
             }
         }

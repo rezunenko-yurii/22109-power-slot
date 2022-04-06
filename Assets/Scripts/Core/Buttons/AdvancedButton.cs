@@ -32,7 +32,7 @@ namespace Core.Buttons
         
         protected override void AddListeners()
         {
-            Debug.Log($"{name} {nameof(AdvancedButtonUI)} {nameof(AddListeners)}");
+            //Debug.Log($"{name} {nameof(AdvancedButtonUI)} {nameof(AddListeners)}");
 
             if (_reactOnPauseInput)
             {
@@ -43,7 +43,7 @@ namespace Core.Buttons
         
         protected override void RemoveListeners()
         {
-            Debug.Log($"{name} {nameof(AdvancedButtonUI)} {nameof(RemoveListeners)}");
+            //Debug.Log($"{name} {nameof(AdvancedButtonUI)} {nameof(RemoveListeners)}");
 
             if (_reactOnPauseInput)
             {
