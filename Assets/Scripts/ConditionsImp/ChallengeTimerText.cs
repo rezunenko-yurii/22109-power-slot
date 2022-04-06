@@ -94,9 +94,21 @@ namespace ConditionsImp
 
         private string FormatSeconds(TimeSpan timeSpan)
         {
-            return $"{timeSpan.TotalHours:00}:" +
+            return $"{GetHours(timeSpan):00}:" +
                    $"{timeSpan.Minutes:00}:" +
                    $"{timeSpan.Seconds:00}";
+        }
+
+        private int GetHours(TimeSpan timeSpan)
+        {
+            if (timeSpan.TotalDays > 0)
+            {
+                return (int) timeSpan.TotalDays * 24 + timeSpan.Hours;
+            }
+            else
+            {
+                return 0;
+            }
         }
     }
 }

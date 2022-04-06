@@ -17,6 +17,24 @@ namespace Core.Audio
             _audioSource.volume = Volume;
         }
 
+        public AudioClip CurrentAudioClip => _audioSource.clip;
+        public bool HasAudioClip => !ReferenceEquals(_audioSource.clip, null);
+
+        public void TryPlay(AudioClip audioClip)
+        {
+            if (audioClip == null)
+            {
+                return;
+            }
+            
+            if (HasAudioClip && CurrentAudioClip.Equals(audioClip))
+            {
+                return;
+            }
+            
+            Play(audioClip);
+        }
+
         public void Play(AudioClip audioClip)
         {
             _audioSource.clip = audioClip;

@@ -13,11 +13,7 @@ namespace Core.GameScreens
         protected override void OnShowed(PlayableDirector obj)
         {
             base.OnShowed(obj);
-            
-            if (audioClip != null)
-            {
-                _musicController.Play(audioClip);
-            }
+            _musicController.TryPlay(audioClip);
         }
     }
 }
