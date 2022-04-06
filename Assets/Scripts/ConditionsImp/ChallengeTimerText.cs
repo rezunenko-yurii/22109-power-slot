@@ -39,11 +39,11 @@ namespace ConditionsImp
         {
             if (_challenge.IsFulFilled)
             {
-                textfield.text = "24:00:00";
+                textfield.text = FormatSeconds(_timer.Duration);
             }
             else if (!_challenge.IsStarted || _timer.IsExpired)
             {
-                textfield.text = "24:00:00";
+                textfield.text = FormatSeconds(_timer.Duration);
             }
             else
             {
@@ -84,9 +84,19 @@ namespace ConditionsImp
         
         private void UpdateText(TimeSpan timeSpan)
         {
-            textfield.text = $"{timeSpan.Hours:00}:" +
-                             $"{timeSpan.Minutes:00}:" +
-                             $"{timeSpan.Seconds:00}";
+            textfield.text = FormatSeconds(timeSpan);
+        }
+        
+        private string FormatSeconds(int seconds)
+        {
+            return FormatSeconds(TimeSpan.FromSeconds(seconds));
+        }
+
+        private string FormatSeconds(TimeSpan timeSpan)
+        {
+            return $"{timeSpan.TotalHours:00}:" +
+                   $"{timeSpan.Minutes:00}:" +
+                   $"{timeSpan.Seconds:00}";
         }
     }
 }
