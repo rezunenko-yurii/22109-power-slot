@@ -12,19 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 469c24fdb3bd6431b92cc1465bd9166b, type: 3}
   m_Name: RemoteConfigDataStoreAsset
   m_EditorClassIdentifier: 
-  _rsKeyList: "[\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"46fe6a1f-7e04-4ebf-aaaf-c0284decd290\"\r\n   
-    },\r\n    \"rs\": {\r\n      \"key\": \"canUse\",\r\n      \"type\": \"string\",\r\n     
-    \"value\": \"false\"\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n     
-    \"entityId\": \"b2b66c47-b553-4a21-b536-c54ca5b0cbe9\"\r\n    },\r\n    \"rs\":
-    {\r\n      \"key\": \"urlsConfig\",\r\n      \"type\": \"json\",\r\n      \"schemaId\":
-    null,\r\n      \"value\": {}\r\n    }\r\n  }\r\n]"
-  _rsLastCachedKeyList: "[\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"46fe6a1f-7e04-4ebf-aaaf-c0284decd290\"\r\n   
-    },\r\n    \"rs\": {\r\n      \"key\": \"canUse\",\r\n      \"type\": \"string\",\r\n     
-    \"value\": \"false\"\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n     
-    \"entityId\": \"b2b66c47-b553-4a21-b536-c54ca5b0cbe9\"\r\n    },\r\n    \"rs\":
-    {\r\n      \"key\": \"urlsConfig\",\r\n      \"type\": \"json\",\r\n      \"schemaId\":
-    null,\r\n      \"value\": {}\r\n    }\r\n  }\r\n]"
-  _environments: "[\r\n  {\r\n    \"projectId\": \"39956c2b-2567-4f33-bd23-620de0e41431\",\r\n   
-    \"name\": \"production\",\r\n    \"id\": \"561f5245-fd7b-409f-8253-aa5da475f627\",\r\n   
-    \"isDefault\": true,\r\n    \"createdAt\": \"2022-01-31T18:06:30Z\",\r\n    \"updatedAt\":
-    \"2022-01-31T18:06:30Z\"\r\n  }\r\n]"
+  _rsKeyList: "[\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"c7853760-98bc-406d-8626-c08df0766b13\"\r\n   
+    },\r\n    \"rs\": {\r\n      \"key\": \"urlsConfig\",\r\n      \"type\": \"json\",\r\n     
+    \"schemaId\": null,\r\n      \"value\": {}\r\n    }\r\n  }\r\n]"
+  _rsLastCachedKeyList: "[\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"c7853760-98bc-406d-8626-c08df0766b13\"\r\n   
+    },\r\n    \"rs\": {\r\n      \"key\": \"urlsConfig\",\r\n      \"type\": \"json\",\r\n     
+    \"schemaId\": null,\r\n      \"value\": {}\r\n    }\r\n  }\r\n]"
+  _environments: "[\r\n  {\r\n    \"projectId\": \"39dd6b00-c47b-4a5d-9d6d-0d6bac9046fe\",\r\n   
+    \"name\": \"production\",\r\n    \"id\": \"2e8b0be2-b272-477c-92c3-2b32bdea446d\",\r\n   
+    \"isDefault\": true,\r\n    \"createdAt\": \"2022-03-17T12:02:09Z\",\r\n    \"updatedAt\":
+    \"2022-03-17T12:02:09Z\"\r\n  }\r\n]"

@@ -300,7 +300,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <Id>k__BackingField: screen.lobby
   <Director>k__BackingField: {fileID: 7471624486106919934}
-  audioClip: {fileID: 8300000, guid: 513af13bb2d6743cd8e1c92770b73479, type: 3}
+  audioClip: {fileID: 8300000, guid: 66133616cf5b1aa4188eb3dc3f8bda89, type: 3}
 --- !u!1 &5412568478956275033
 GameObject:
   m_ObjectHideFlags: 0
@@ -519,8 +519,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcec3c244cab4e82ba3387781ab692a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundName: 0
   _reactOnPauseInput: 1
+  soundName: 0
   id: popup.challenge
 --- !u!1001 &855867702289344590
 PrefabInstance:
@@ -668,8 +668,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7350f8314694b4989fd3568958b0900, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundName: 0
   _reactOnPauseInput: 1
+  soundName: 0
   screenToShowId: screen.wheel
 --- !u!224 &3072743389310104714 stripped
 RectTransform:
