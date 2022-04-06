@@ -305,7 +305,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae6cf5fdc0e2e514aa1cf04af23380a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _music: {fileID: 0}
   _spinSound: {fileID: 8300000, guid: 2d97272d879d1a341b00d7ac1fe6af8d, type: 3}
 --- !u!1001 &2241326827059479538
 PrefabInstance:
@@ -742,6 +741,10 @@ PrefabInstance:
     - target: {fileID: 7451838353881191344, guid: 8d5cf11c3830d41e683e5685977cf52d, type: 3}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7451838353881191344, guid: 8d5cf11c3830d41e683e5685977cf52d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8d5cf11c3830d41e683e5685977cf52d, type: 3}

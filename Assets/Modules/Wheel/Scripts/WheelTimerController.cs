@@ -18,6 +18,7 @@ public class WheelTimerController : AdvancedMonoBehaviour
     {
         base.Initialize();
         _timer = (MemoryTimer) _timers.GetObject("timer.wheel");
+        _timer.Resume();
     }
 
     protected override void OnEnableInitialized()
@@ -43,6 +44,7 @@ public class WheelTimerController : AdvancedMonoBehaviour
         blackBack.SetActive(true);
         backTimer.SetActive(true);
         textMeshPro.gameObject.SetActive(true);
+        UpdateText(_timer.LeftTimeSpan());
     }
     
     private void UpdateText(double seconds)
