@@ -9,7 +9,7 @@
 
 	{"Id":"bundle.shop.1", "Products":["product.coins.2000"]},
 	{"Id":"bundle.shop.2", "Products":["product.coins.7000"]},
-	{"Id":"bundle.shop.3", "Products":["product.coins.15000"]},
+	{"Id":"bundle.shop.3", "Products":["product.coins.10000"]},
 	{"Id":"bundle.shop.4", "Products":["product.coins.25000"]},
 	{"Id":"bundle.shop.5", "Products":["product.game.4"]},
 

@@ -87,6 +87,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BaseCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 3481308164852439397, guid: 74af471197228964f946b2925b3887dd, type: 3}
+      propertyPath: m_Alpha
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8244086836426909316, guid: 74af471197228964f946b2925b3887dd, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -173,6 +177,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74af471197228964f946b2925b3887dd, type: 3}
+--- !u!225 &3422331060587429122 stripped
+CanvasGroup:
+  m_CorrespondingSourceObject: {fileID: 3481308164852439397, guid: 74af471197228964f946b2925b3887dd, type: 3}
+  m_PrefabInstance: {fileID: 2246901091657262183}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &7874115066228376291 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8244086836426909316, guid: 74af471197228964f946b2925b3887dd, type: 3}
@@ -204,19 +213,19 @@ PrefabInstance:
     - target: {fileID: 4519542598159061042, guid: 093cb3855a0032842b92ab31fb6bb350, type: 3}
       propertyPath: m_PlayableAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 20d9ba753d0f8ec4dab590d1bf130425, type: 2}
+      objectReference: {fileID: 11400000, guid: 35e7c1ae751057042a8cadb88ac7865a, type: 2}
     - target: {fileID: 4519542598159061042, guid: 093cb3855a0032842b92ab31fb6bb350, type: 3}
       propertyPath: m_SceneBindings.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4519542598159061042, guid: 093cb3855a0032842b92ab31fb6bb350, type: 3}
       propertyPath: m_SceneBindings.Array.data[0].key
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 4323497189727824796, guid: 35e7c1ae751057042a8cadb88ac7865a, type: 2}
     - target: {fileID: 4519542598159061042, guid: 093cb3855a0032842b92ab31fb6bb350, type: 3}
       propertyPath: m_SceneBindings.Array.data[0].value
       value: 
-      objectReference: {fileID: 1408702355669500386}
+      objectReference: {fileID: 3422331060587429122}
     - target: {fileID: 4519542598159061042, guid: 093cb3855a0032842b92ab31fb6bb350, type: 3}
       propertyPath: m_ExposedReferences.m_References.Array.size
       value: 4
@@ -343,11 +352,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 093cb3855a0032842b92ab31fb6bb350, type: 3}
---- !u!224 &1408702355669500386 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 3859577505791201732, guid: 093cb3855a0032842b92ab31fb6bb350, type: 3}
-  m_PrefabInstance: {fileID: 2739118892485578790}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2633976812860580786 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 184240673027896212, guid: 093cb3855a0032842b92ab31fb6bb350, type: 3}

@@ -331,8 +331,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2070076120}
   m_HandleRect: {fileID: 2070076119}
   m_Direction: 0
-  m_Value: 0.000000057771082
-  m_Size: 0.35969695
+  m_Value: 0.000000077186414
+  m_Size: 0.27287355
   m_NumberOfSteps: 1
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1625,6 +1625,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8244086836426909316, guid: 74af471197228964f946b2925b3887dd, type: 3}
   m_PrefabInstance: {fileID: 9175319242107127594}
   m_PrefabAsset: {fileID: 0}
+--- !u!225 &5694062204583173711 stripped
+CanvasGroup:
+  m_CorrespondingSourceObject: {fileID: 3481308164852439397, guid: 74af471197228964f946b2925b3887dd, type: 3}
+  m_PrefabInstance: {fileID: 9175319242107127594}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &9175319242278396601
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1978,6 +1983,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: ChallengesScreen
       objectReference: {fileID: 0}
+    - target: {fileID: 3859577505791201732, guid: 093cb3855a0032842b92ab31fb6bb350, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -2500
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519542598159061042, guid: 093cb3855a0032842b92ab31fb6bb350, type: 3}
+      propertyPath: m_SceneBindings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519542598159061042, guid: 093cb3855a0032842b92ab31fb6bb350, type: 3}
+      propertyPath: m_SceneBindings.Array.data[0].key
+      value: 
+      objectReference: {fileID: 4323497189727824796, guid: 35e7c1ae751057042a8cadb88ac7865a, type: 2}
+    - target: {fileID: 4519542598159061042, guid: 093cb3855a0032842b92ab31fb6bb350, type: 3}
+      propertyPath: m_SceneBindings.Array.data[0].value
+      value: 
+      objectReference: {fileID: 5694062204583173711}
     - target: {fileID: 8339517954549896937, guid: 093cb3855a0032842b92ab31fb6bb350, type: 3}
       propertyPath: <Id>k__BackingField
       value: screen.challenges

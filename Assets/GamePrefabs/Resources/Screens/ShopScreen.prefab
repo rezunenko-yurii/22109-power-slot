@@ -294,16 +294,24 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 35e7c1ae751057042a8cadb88ac7865a, type: 2}
     - target: {fileID: 4519542598159061042, guid: 093cb3855a0032842b92ab31fb6bb350, type: 3}
       propertyPath: m_SceneBindings.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4519542598159061042, guid: 093cb3855a0032842b92ab31fb6bb350, type: 3}
       propertyPath: m_SceneBindings.Array.data[0].key
       value: 
       objectReference: {fileID: 4500870519549606878, guid: 718e90b774e473244b27eaf1f6c4d592, type: 2}
     - target: {fileID: 4519542598159061042, guid: 093cb3855a0032842b92ab31fb6bb350, type: 3}
+      propertyPath: m_SceneBindings.Array.data[1].key
+      value: 
+      objectReference: {fileID: 4323497189727824796, guid: 35e7c1ae751057042a8cadb88ac7865a, type: 2}
+    - target: {fileID: 4519542598159061042, guid: 093cb3855a0032842b92ab31fb6bb350, type: 3}
       propertyPath: m_SceneBindings.Array.data[0].value
       value: 
       objectReference: {fileID: 3748810889179609028}
+    - target: {fileID: 4519542598159061042, guid: 093cb3855a0032842b92ab31fb6bb350, type: 3}
+      propertyPath: m_SceneBindings.Array.data[1].value
+      value: 
+      objectReference: {fileID: 7327292328145844025}
     - target: {fileID: 4519542598159061042, guid: 093cb3855a0032842b92ab31fb6bb350, type: 3}
       propertyPath: m_ExposedReferences.m_References.Array.size
       value: 7
@@ -492,6 +500,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BaseCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 3481308164852439397, guid: 74af471197228964f946b2925b3887dd, type: 3}
+      propertyPath: m_Alpha
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8244086836426909316, guid: 74af471197228964f946b2925b3887dd, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -581,5 +593,10 @@ PrefabInstance:
 --- !u!224 &2852805606984812760 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8244086836426909316, guid: 74af471197228964f946b2925b3887dd, type: 3}
+  m_PrefabInstance: {fileID: 6196903445075701340}
+  m_PrefabAsset: {fileID: 0}
+--- !u!225 &7327292328145844025 stripped
+CanvasGroup:
+  m_CorrespondingSourceObject: {fileID: 3481308164852439397, guid: 74af471197228964f946b2925b3887dd, type: 3}
   m_PrefabInstance: {fileID: 6196903445075701340}
   m_PrefabAsset: {fileID: 0}

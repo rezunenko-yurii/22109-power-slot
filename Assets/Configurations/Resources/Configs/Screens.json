@@ -1,7 +1,6 @@
 ﻿[
   {"Id":"screen.settings", "Name": "SettingsScreen"},
   {"Id":"screen.shop", "Name": "ShopScreen"},
-  {"Id":"screen.dailybonus", "Name": "DailyBonusStepperScreen"},
 
   {"Id":"screen.wheel", "Name": "WheelScreen"},
   {"Id":"screen.lobby", "Name": "LobbyScreen"},

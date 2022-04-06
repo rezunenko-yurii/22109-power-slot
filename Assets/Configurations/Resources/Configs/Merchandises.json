@@ -1,7 +1,7 @@
 [
 	{"Id":"com.powercas.new.2", "ProductPackId":"bundle.shop.1", "ProductType": "Consumable", "Money": {"Type":"Dollars", "Amount": "0"}},
 	{"Id":"com.powercas.new.7", "ProductPackId":"bundle.shop.2", "ProductType": "Consumable", "Money": {"Type":"Dollars", "Amount": "0"}},
-	{"Id":"com.powercas.new.15", "ProductPackId":"bundle.shop.3", "ProductType": "Consumable", "Money": {"Type":"Dollars", "Amount": "0"}},
+	{"Id":"com.powercas.new.10", "ProductPackId":"bundle.shop.3", "ProductType": "Consumable", "Money": {"Type":"Dollars", "Amount": "0"}},
 	{"Id":"com.powercas.new.25", "ProductPackId":"bundle.shop.4", "ProductType": "Consumable", "Money": {"Type":"Dollars", "Amount": "0"}},
 	{"Id":"com.powercas.new.mex", "ProductPackId":"bundle.shop.5", "ProductType": "Consumable", "Money": {"Type":"Dollars", "Amount": "0"}},
 ]
