@@ -1,6 +1,5 @@
 ﻿using Core.Finances.Store.Products;
 using Core.Signals.GameSignals;
-using GameSignals;
 using UnityEngine;
 using Zenject;
 
