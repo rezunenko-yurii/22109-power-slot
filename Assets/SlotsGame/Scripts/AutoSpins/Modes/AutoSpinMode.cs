@@ -1,3 +1,4 @@
+using UnityEngine;
 using Zenject;
 
 namespace SlotsGame.Scripts.AutoSpins.Modes
@@ -56,7 +57,10 @@ namespace SlotsGame.Scripts.AutoSpins.Modes
 
         public override void OnContextChanged()
         {
+            Debug.Log($"ForcedFreeSpins OnContextChanged");
+            
             base.OnContextChanged();
+            _count = 0;
             _signalBus.TryUnsubscribe<SlotSignals.EffectsEnded>(DecreaseCount);
         }
 
@@ -72,11 +76,14 @@ namespace SlotsGame.Scripts.AutoSpins.Modes
         
         public override void Merge(int autoSpinsCount)
         {
+            Debug.Log($"ForcedFreeSpins Merged: {_count} + {autoSpinsCount} = {_count + autoSpinsCount}");
             _count += autoSpinsCount;
         }
         
         private void DecreaseCount()
         {
+            Debug.Log($"ForcedFreeSpins Left: {_count}");
+            
             if (_count == 0)
             {
                 _signalBus.Unsubscribe<SlotSignals.EffectsEnded>(DecreaseCount);

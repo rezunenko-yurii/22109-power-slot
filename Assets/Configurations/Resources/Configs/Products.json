@@ -26,6 +26,7 @@
 	{"Id":"product.coins.25000", "Type":"Coins", "Amount": 25000.0, "Description": "25000 coins"},
 	{"Id":"product.coins.30000", "Type":"Coins", "Amount": 30000.0, "Description": "30000 coins"},
 	
+	{"Id":"product.spins.5", "Type":"Spins", "Amount": 5.0, "Description": "5 spins"},
 	{"Id":"product.spins.10", "Type":"Spins", "Amount":10.0, "Description": "10 spins"},
 	{"Id":"product.spins.15", "Type":"Spins", "Amount":15.0, "Description": "15 spins"},
 	{"Id":"product.spins.25", "Type":"Spins", "Amount":25.0, "Description": "25 spins"},

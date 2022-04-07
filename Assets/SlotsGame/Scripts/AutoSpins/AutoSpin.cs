@@ -22,25 +22,29 @@ namespace SlotsGame.Scripts.AutoSpins
         {
             ChangeMode(type);
         }
-        
-        public void TransitionTo(AutoSpinType type, int spinsAmount = 0)
+
+        public void TransitionToForcibly(AutoSpinType type, int spinsAmount = 0)
         {
             if (_mode.Type.Equals(type))
             {
-                TryMerge(spinsAmount);
-                return;
-            }
-
-            if (!_mode.CanChangeState())
-            {
+                //TryMerge(spinsAmount);
                 return;
             }
 
             ChangeMode(type);
-            
             TryMerge(spinsAmount);
             
             StateChanged?.Invoke(Type);
+        }
+        
+        public void TransitionTo(AutoSpinType type, int spinsAmount = 0)
+        {
+            if (!_mode.CanChangeState())
+            {
+                return;
+            }
+            
+            TransitionToForcibly(type, spinsAmount);
         }
 
         private void ChangeMode(AutoSpinType type)

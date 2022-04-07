@@ -20,13 +20,20 @@ namespace SlotsGame.Scripts.AutoSpins
             ChangeInteractableState(isClickable);
         }
 
+        protected override void OnEnableInitialized()
+        {
+            base.OnEnableInitialized();
+            ChangeStateSilently(!_autoSpin.Type.Equals(AutoSpinType.Off));
+            UpdateImageState();
+        }
+
         protected override void OnDisableInitialized()
         {
             base.OnDisableInitialized();
         
-            _autoSpin.TransitSilently(AutoSpinType.Off);
-            ChangeStateSilently(false);
-            UpdateImageState();
+            //_autoSpin.TransitSilently(AutoSpinType.Off);
+            //ChangeStateSilently(false);
+            //UpdateImageState();
         }
 
         protected override bool CanChangeState()

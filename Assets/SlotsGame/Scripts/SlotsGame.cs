@@ -101,9 +101,10 @@ namespace SlotsGame.Scripts
             if (_coroutine != null)
             {
                 StopCoroutine(_coroutine);
-                board.Stop();
             }
             
+            board.Stop();
+            _autoSpin.TransitionToForcibly(AutoSpinType.Off);
             _isSpinning = false;
             _signalHelper.Fire<Core.GameSignals.UserInputResume>();
             
