@@ -6,16 +6,25 @@ public class ShowPreviousScreenButton : ScreenButton
     protected override void AddListeners()
     {
         base.AddListeners();
-        ScreensManager.PreShown += OnScreenShown;
+        ScreensManager.PreShown += ChangeButtonAlpha;
     }
 
     protected override void RemoveListeners()
     {
         base.RemoveListeners();
-        ScreensManager.PreShown -= OnScreenShown;
+        ScreensManager.PreShown -= ChangeButtonAlpha;
     }
 
-    private void OnScreenShown(GameScreen obj)
+    protected override void OnEnableInitialized()
+    {
+        base.OnEnableInitialized();
+        if (ScreensManager.Current != null)
+        {
+            ChangeButtonAlpha(ScreensManager.Current);
+        }
+    }
+
+    private void ChangeButtonAlpha(GameScreen obj)
     {
         if (obj.Id.Equals("screen.lobby"))
         {

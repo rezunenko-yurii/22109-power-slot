@@ -150,6 +150,7 @@ namespace SlotsGame.Scripts
         private void OnSpinEnded()
         {
             Debug.Log($"{nameof(SlotsGame)} {nameof(OnSpinEnded)}");
+            TryStopSound();
             _signalHelper.Fire<SlotSignals.SpinEnded>();
 
             _combinationHolder.Find();
@@ -168,7 +169,6 @@ namespace SlotsGame.Scripts
         private IEnumerator Pause(int seconds)
         {
             Debug.Log($"{nameof(SlotsGame)} {nameof(Pause)}");
-            TryStopSound();
             yield return new WaitForSeconds(seconds);
         
             Debug.Log($"{nameof(SlotsGame)} {nameof(Pause)} Over");

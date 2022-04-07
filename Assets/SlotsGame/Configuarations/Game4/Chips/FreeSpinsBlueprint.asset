@@ -16,6 +16,6 @@ MonoBehaviour:
   isAvailable: 1
   SearchMode: 1
   minCombinationAmount: 3
-  dropCoefficient: 9
+  dropCoefficient: 6
   Rewards:
   - {fileID: 11400000, guid: a18f026f357fecb4fa86d2a62b528d40, type: 2}

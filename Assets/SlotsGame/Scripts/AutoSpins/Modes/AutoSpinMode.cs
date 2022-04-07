@@ -1,3 +1,4 @@
+using Finances.Wallets;
 using UnityEngine;
 using Zenject;
 
@@ -40,8 +41,9 @@ namespace SlotsGame.Scripts.AutoSpins.Modes
     public class ForciblyAmount : AutoSpinMode
     {
         [Inject] private SignalBus _signalBus;
+        [Inject] private SpinsWallet _spinsWallet;
         
-        private int _count;
+        //private int _count;
         public override AutoSpinType Type { get; protected set; } = AutoSpinType.ForcedAmount;
 
         ~ForciblyAmount()
@@ -60,13 +62,13 @@ namespace SlotsGame.Scripts.AutoSpins.Modes
             Debug.Log($"ForcedFreeSpins OnContextChanged");
             
             base.OnContextChanged();
-            _count = 0;
+            //_count = 0;
             _signalBus.TryUnsubscribe<SlotSignals.EffectsEnded>(DecreaseCount);
         }
 
         public override bool CanChangeState()
         {
-            return _count == 0;
+            return _spinsWallet.Balance() == 0;
         }
         
         public override bool CanMerge()
@@ -76,21 +78,23 @@ namespace SlotsGame.Scripts.AutoSpins.Modes
         
         public override void Merge(int autoSpinsCount)
         {
-            Debug.Log($"ForcedFreeSpins Merged: {_count} + {autoSpinsCount} = {_count + autoSpinsCount}");
-            _count += autoSpinsCount;
+            Debug.Log($"ForcedFreeSpins Merged: {_spinsWallet.Balance()}");
+            //_count += autoSpinsCount;
         }
         
         private void DecreaseCount()
         {
-            Debug.Log($"ForcedFreeSpins Left: {_count}");
+            Debug.Log($"ForcedFreeSpins Left: {_spinsWallet.Balance()}");
             
-            if (_count == 0)
+            if (_spinsWallet.Balance() == 0)
             {
                 _signalBus.Unsubscribe<SlotSignals.EffectsEnded>(DecreaseCount);
                 Context.TransitionTo(AutoSpinType.Off);
             }
-            
-            _count--;
+            else
+            {
+                //_count--;
+            }
         }
     }
     
