@@ -7,6 +7,7 @@ namespace SlotsGame.Scripts.AutoSpins
     public class AutoSpin
     {
         public event Action<AutoSpinType> StateChanged;
+        public event Action<AutoSpinType> StateChangedSilently;
         [Inject] private AutoSpinModesFactory _factory;
         private AutoSpinMode _mode;
 
@@ -18,12 +19,7 @@ namespace SlotsGame.Scripts.AutoSpins
 
         public AutoSpinType Type => _mode.Type;
 
-        public void TransitSilently(AutoSpinType type)
-        {
-            ChangeMode(type);
-        }
-
-        public void TransitionToForcibly(AutoSpinType type, int spinsAmount = 0)
+        private void Transit(AutoSpinType type, int spinsAmount = 0)
         {
             if (_mode.Type.Equals(type))
             {
@@ -33,7 +29,16 @@ namespace SlotsGame.Scripts.AutoSpins
 
             ChangeMode(type);
             TryMerge(spinsAmount);
-            
+        }
+        public void TransitSilently(AutoSpinType type, int spinsAmount = 0)
+        {
+            Transit(type,spinsAmount);
+            StateChangedSilently?.Invoke(Type);
+        }
+
+        public void TransitionToForcibly(AutoSpinType type, int spinsAmount = 0)
+        {
+            TransitSilently(type,spinsAmount);
             StateChanged?.Invoke(Type);
         }
         

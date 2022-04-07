@@ -48,24 +48,18 @@ namespace SlotsGame.Scripts
         {
             base.OnEnableInitialized();
             _signalHelper.Fire<Core.GameSignals.UserInputResume>();
-            
-            TryStartAutoSpin();
-        }
 
-        private void TryStartAutoSpin()
+            if (HasFreeSpins())
+            {
+                _effectsManager.AddToQuery(EffectsTypes.FreeSpins);
+                _effectsManager.Play(true);
+            }
+        }
+        
+        private bool HasFreeSpins()
         {
             var freeSpins = _spinsWallet.Balance();
-            if (freeSpins > 0)
-            {
-                _isSpinning = true;
-                _signalHelper.Fire<Core.GameSignals.UserInputPause>();
-                
-                _effectsManager.AddToQuery(EffectsTypes.FreeSpins);
-                _autoSpin.TransitionTo(AutoSpinType.ForcedAmount, (int) freeSpins);
-
-                _signalHelper.Fire<SlotSignals.EffectsStarted>();
-                _effectsManager.Play();
-            }
+            return freeSpins > 0;
         }
 
         protected override void AddListeners()
@@ -115,7 +109,25 @@ namespace SlotsGame.Scripts
         {
             _signalHelper.Fire<Core.GameSignals.UserInputPause>();
             _isSpinning = true;
+
+            if (HasFreeSpins())
+            {
+                TryStartAutoSpin();
+            }
+            
             Spin();
+        }
+        
+        private void TryStartAutoSpin()
+        {
+            //_isSpinning = true;
+            //_signalHelper.Fire<Core.GameSignals.UserInputPause>();
+                
+            //_effectsManager.AddToQuery(EffectsTypes.FreeSpins);
+            _autoSpin.TransitSilently(AutoSpinType.ForcedAmount, (int) _spinsWallet.Balance());
+
+            //_signalHelper.Fire<SlotSignals.EffectsStarted>();
+            //_effectsManager.Play();
         }
 
         private void Spin()

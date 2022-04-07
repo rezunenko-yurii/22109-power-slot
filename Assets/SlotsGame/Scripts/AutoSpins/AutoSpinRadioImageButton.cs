@@ -23,8 +23,12 @@ namespace SlotsGame.Scripts.AutoSpins
         protected override void OnEnableInitialized()
         {
             base.OnEnableInitialized();
+            
             ChangeStateSilently(!_autoSpin.Type.Equals(AutoSpinType.Off));
             UpdateImageState();
+            
+            bool isClickable = !_autoSpin.Type.Equals(AutoSpinType.ForcedAmount);
+            ChangeInteractableState(isClickable);
         }
 
         protected override void OnDisableInitialized()
@@ -51,12 +55,23 @@ namespace SlotsGame.Scripts.AutoSpins
         {
             base.AddListeners();
             _autoSpin.StateChanged += AutoSpinControllerOnStateChanged;
+            _autoSpin.StateChangedSilently += OnStateChangedSilently;
         }
-
+        
         protected override void RemoveListeners()
         {
             base.RemoveListeners();
             _autoSpin.StateChanged -= AutoSpinControllerOnStateChanged;
+            _autoSpin.StateChangedSilently -= OnStateChangedSilently;
+        }
+        
+        private void OnStateChangedSilently(AutoSpinType type)
+        {
+            ChangeStateSilently(!_autoSpin.Type.Equals(AutoSpinType.Off));
+            UpdateImageState();
+            
+            bool isClickable = !type.Equals(AutoSpinType.ForcedAmount);
+            ChangeInteractableState(isClickable);
         }
     }
 }

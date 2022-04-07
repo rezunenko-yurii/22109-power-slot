@@ -12,19 +12,28 @@ namespace SlotsGame.Scripts.Effects
         [SerializeField] private PlayableDirector freespins;
         private Queue<EffectsTypes> _query = new Queue<EffectsTypes>();
 
-        public void Play()
+        private bool _playSilently = false;
+        public void Play(bool silently = false)
         {
             //Debug.Log($"{nameof(EffectsManager)} {nameof(Play)}");
             
             if (_query.Count > 0)
             {
+                _playSilently = silently;
                 var effectsTypes = _query.Dequeue();
                 PlayEffect(effectsTypes);
             }
             else
             {
                 //Debug.Log($"{nameof(EffectsManager)} {nameof(Play)} All Animations Played");
-                Completed?.Invoke();
+                if (_playSilently)
+                {
+                    _playSilently = false;
+                }
+                else
+                {
+                    Completed?.Invoke();
+                }
             }
         }
 
