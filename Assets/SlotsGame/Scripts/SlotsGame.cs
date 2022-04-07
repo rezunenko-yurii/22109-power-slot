@@ -47,6 +47,8 @@ namespace SlotsGame.Scripts
         protected override void OnEnableInitialized()
         {
             base.OnEnableInitialized();
+            _signalHelper.Fire<Core.GameSignals.UserInputResume>();
+            
             TryStartAutoSpin();
         }
 

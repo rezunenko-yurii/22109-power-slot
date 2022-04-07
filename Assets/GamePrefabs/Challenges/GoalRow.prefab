@@ -1260,7 +1260,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   switchers:
   - {fileID: 2852084561093726211}
+  <Revers>k__BackingField: 0
   _challengeId: 
+  _locationId: 
 --- !u!114 &2852084561093726211
 MonoBehaviour:
   m_ObjectHideFlags: 0
