@@ -14,9 +14,15 @@ namespace Core.GameScreens
         public GameScreen Current { get; private set; }
         private string _next;
         private Stack<UIObject> _stack = new Stack<UIObject>();
+        private bool _canShow = true;
 
         public override void Show(string id)
         {
+            if (!_canShow)
+            {
+                return;
+            }
+            
             _popupsManager.TryHideLast();
 
             if (Current == null)
@@ -26,6 +32,7 @@ namespace Core.GameScreens
             else if (!Current.Id.Equals(id))
             {
                 _next = id;
+                _canShow = false;
                 Hide(Current);
             }
             
@@ -37,6 +44,7 @@ namespace Core.GameScreens
 
             Current = (GameScreen) uiObject;
             _next = null;
+            _canShow = true;
 
             var last = _stack.Count > 0 ? _stack.First() : null;
             if (last == null || !last.Equals(uiObject))

@@ -9,6 +9,7 @@ public class UIObjectsManager<TUIObject,TResourcesLoader> : AdvancedMonoBehaviou
     where TUIObject : UIObject
     where TResourcesLoader : ResourcesLoader<TUIObject>
 {
+    public event Action<TUIObject> PreShown;
     public event Action<TUIObject> Shown;
     public event Action<TUIObject> Hidden;
     
@@ -52,6 +53,8 @@ public class UIObjectsManager<TUIObject,TResourcesLoader> : AdvancedMonoBehaviou
     
     protected virtual void AddToActive(TUIObject uiObject)
     {
+        PreShown?.Invoke(uiObject);
+        
         uiObject.gameObject.SetActive(true);
         uiObject.Shown += OnShown;
         uiObject.Show();
