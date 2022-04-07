@@ -9,7 +9,7 @@ public class SelectHintButton : AdvancedMonoBehaviour
     [Inject] private MatchBoostersList boostersList;
     [SerializeField] private string hintId;
     [SerializeField] private Button button;
-    [SerializeField] private ScreenButton screenButton;
+    [SerializeField] private ShowScreenButton screenButton;
 
     [SerializeField] private Sprite unselectedSprite;
     [SerializeField] private Sprite selectedSprite;

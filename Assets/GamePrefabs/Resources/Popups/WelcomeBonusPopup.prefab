@@ -163,6 +163,7 @@ GameObject:
   - component: {fileID: 6501498203652318290}
   - component: {fileID: 3414097534639209536}
   - component: {fileID: 7613851201166219200}
+  - component: {fileID: 2804590415152985377}
   m_Layer: 0
   m_Name: Image (1)
   m_TagString: Untagged
@@ -179,11 +180,11 @@ RectTransform:
   m_GameObject: {fileID: 8855672561082966018}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8040247336920895107}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -212,7 +213,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -228,6 +229,25 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!320 &2804590415152985377
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8855672561082966018}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: e89b7488e48c3f549928e8f076f73fb6, type: 2}
+  m_InitialState: 0
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: -6508948689222924190, guid: e89b7488e48c3f549928e8f076f73fb6, type: 2}
+    value: {fileID: 6501498203652318290}
+  m_ExposedReferences:
+    m_References: []
 --- !u!1001 &4112378771268052342
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -235,6 +255,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8040247336920895107}
     m_Modifications:
+    - target: {fileID: 2638444986694306985, guid: bb9bb0b77f348d14998a2ae510e9c6f4, type: 3}
+      propertyPath: _director
+      value: 
+      objectReference: {fileID: 2804590415152985377}
     - target: {fileID: 4381310052890708712, guid: bb9bb0b77f348d14998a2ae510e9c6f4, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -253,7 +277,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5255641527083261777, guid: bb9bb0b77f348d14998a2ae510e9c6f4, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5255641527083261777, guid: bb9bb0b77f348d14998a2ae510e9c6f4, type: 3}
       propertyPath: m_AnchorMax.x

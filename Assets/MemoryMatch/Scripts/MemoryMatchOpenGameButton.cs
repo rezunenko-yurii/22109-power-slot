@@ -7,7 +7,7 @@ using Zenject;
 
 namespace MemoryMatch
 {
-    public class MemoryMatchOpenGameButton : ScreenButton
+    public class MemoryMatchOpenGameButton : ShowScreenButton
     {
         [Inject] private LevelsManager _levelsManager;
         [Inject] private LivesManager _livesManager;

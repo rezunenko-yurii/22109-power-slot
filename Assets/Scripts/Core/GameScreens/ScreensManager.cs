@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+using System.Linq;
 using Core.Popups;
 using UI;
 using UnityEngine;
@@ -10,63 +12,60 @@ namespace Core.GameScreens
         [Inject] private PopupsManager _popupsManager;
 
         public GameScreen Current { get; private set; }
-        
-        //private string _nextId;
-        private (string, string) scrs;
-        
+        private string _next;
+        private Stack<UIObject> _stack = new Stack<UIObject>();
+
         public override void Show(string id)
         {
-            if (scrs.Item2 != null)
-            {
-                return;
-            }
-            
             _popupsManager.TryHideLast();
-            string currentId = GetLastId();
-            
-            if (string.IsNullOrEmpty(currentId))
+
+            if (Current == null)
             {
                 base.Show(id);
             }
-            else if (!currentId.Equals(id))
+            else if (!Current.Id.Equals(id))
             {
-                scrs = (currentId, id);
-                Hide(currentId);
+                _next = id;
+                Hide(Current);
             }
             
-            
-            /*string currentId = GetLastId();
-            if (currentId == null )
+        }
+
+        protected override void OnShown(UIObject uiObject)
+        {
+            base.OnShown(uiObject);
+
+            Current = (GameScreen) uiObject;
+            _next = null;
+
+            var last = _stack.Count > 0 ? _stack.First() : null;
+            if (last == null || !last.Equals(uiObject))
             {
-                Debug.Log($"Show screen {id}");
-                _nextId = null;
-                base.Show(id);
+                _stack.Push(uiObject);
             }
-            else if (!currentId.Equals(id))
-            {
-                Debug.Log($"Show new screen {id} / hide {currentId}");
-                _nextId = id;
-                Hide(currentId);
-            }*/
         }
 
         protected override void OnHidden(UIObject uiObject)
         {
             base.OnHidden(uiObject);
-            string next = scrs.Item2;
-            if (next != null)
+
+            Current = null;
+
+            if (_next != null)
             {
-                Debug.Log($"Hidden screen {uiObject.Id} / try show {next}");
-                scrs = (null, null);
-                base.Show(next);
-                //_nextId = null;
+                Debug.Log($"Hidden screen {uiObject.Id} / try show {_next}");
+                base.Show(_next);
             }
         }
 
-        protected override void AddToActive(GameScreen uiObject)
+        public void ShowPrevious()
         {
-            base.AddToActive(uiObject);
-            Current = uiObject;
+            if (_stack.Count > 1)
+            {
+                _stack.Pop();
+                var last = _stack.First();
+                Show(last.Id);
+            }
         }
     }
 }

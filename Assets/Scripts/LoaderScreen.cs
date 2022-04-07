@@ -24,11 +24,11 @@ namespace Screens
             _moveSlider.Execute().Done += OnLoaded;
         }
 
-        protected override void OnShowed(PlayableDirector obj)
+        protected override void OnShown(PlayableDirector obj)
         {
             Load();
         
-            base.OnShowed(obj);
+            base.OnShown(obj);
         }
 
         private void OnLoaded(Instruction i)

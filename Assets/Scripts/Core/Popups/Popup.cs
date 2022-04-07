@@ -1,6 +1,4 @@
 ﻿using Core.Audio;
-using Core.Signals;
-using Core.Signals.Base;
 using Core.Signals.GameSignals;
 using UI;
 using Zenject;

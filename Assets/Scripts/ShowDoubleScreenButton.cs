@@ -3,7 +3,7 @@ using SlotsGame.Scripts;
 using SlotsGame.Scripts.Combinations;
 using Zenject;
 
-public class ShowDoubleScreenButton : ScreenButton
+public class ShowDoubleScreenButton : ShowScreenButton
 {
     [Inject] private SignalBus _signalBus;
     private CombinationHolder _combinationHolder;

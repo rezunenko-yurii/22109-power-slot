@@ -9,19 +9,26 @@ public class UIObjectsManager<TUIObject,TResourcesLoader> : AdvancedMonoBehaviou
     where TUIObject : UIObject
     where TResourcesLoader : ResourcesLoader<TUIObject>
 {
+    public event Action<TUIObject> Shown;
     public event Action<TUIObject> Hidden;
     
     [Inject] protected DiContainer _container;
     [Inject] protected TResourcesLoader resourcesLoader;
     
     protected List<TUIObject> Actives;
-    protected Dictionary<string,TUIObject> Archive;
-    
+
+    private Archive<TUIObject> _archive;
+
     protected override void Awake()
     {
         base.Awake();
         Actives = new List<TUIObject>();
-        Archive = new Dictionary<string,TUIObject>();
+        _archive = new Archive<TUIObject>();
+    }
+    
+    public TUIObject Get(string id)
+    {
+        return _archive.Contains(id) ? _archive.GetFromArchive(id) : CreateNew(id);
     }
     
     public virtual void Show(string id)
@@ -29,19 +36,10 @@ public class UIObjectsManager<TUIObject,TResourcesLoader> : AdvancedMonoBehaviou
         TUIObject toShowObject = Get(id);
         AddToActive(toShowObject);
     }
-
-    public TUIObject Get(string id)
-    {
-        return Archive.ContainsKey(id) ? GetFromArchive(id) : CreateNew(id);
-    }
-
+    
     public void Show(TUIObject uiObject)
     {
-        if (Archive.ContainsKey(uiObject.Id))
-        {
-            RemoveFromArchive(uiObject.Id);
-        }
-        
+        _archive.TryRemoveFromArchive(uiObject.Id);
         AddToActive(uiObject);
     }
     
@@ -55,6 +53,7 @@ public class UIObjectsManager<TUIObject,TResourcesLoader> : AdvancedMonoBehaviou
     protected virtual void AddToActive(TUIObject uiObject)
     {
         uiObject.gameObject.SetActive(true);
+        uiObject.Shown += OnShown;
         uiObject.Show();
             
         Actives.Add(uiObject);
@@ -82,19 +81,6 @@ public class UIObjectsManager<TUIObject,TResourcesLoader> : AdvancedMonoBehaviou
 
         return last == null ? string.Empty : last.Id;
     }
-
-    protected TUIObject GetFromArchive(string id)
-    {
-        TUIObject uiObject = Archive[id];
-        RemoveFromArchive(id);
-
-        return uiObject;
-    }
-
-    protected void RemoveFromArchive(string id)
-    {
-        Archive.Remove(id);
-    }
     
     protected bool IsLastActiveHasId(string id)
     {
@@ -115,9 +101,15 @@ public class UIObjectsManager<TUIObject,TResourcesLoader> : AdvancedMonoBehaviou
         uiObject.Hidden += OnHidden;
         uiObject.Hide();
         
-        Archive.Add(uiObject.Id, uiObject);
+        _archive.Add(uiObject.Id, uiObject);
     }
 
+    protected virtual void OnShown(UIObject uiObject)
+    {
+        uiObject.Shown -= OnShown;
+        Shown?.Invoke(uiObject as TUIObject);
+    }
+    
     protected virtual void OnHidden(UIObject uiObject)
     {
         uiObject.Hidden -= OnHidden;

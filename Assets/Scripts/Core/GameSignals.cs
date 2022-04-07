@@ -11,4 +11,10 @@ namespace Core
         public class UserInputPause : IGameSignal{ }
         public class UserInputResume : IGameSignal{ }
     }
+
+    public enum LockType
+    {
+        Global,
+        Game
+    } 
 }

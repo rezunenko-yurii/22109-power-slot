@@ -8,9 +8,9 @@ namespace MemoryMatch
     {
         [Inject] private SignalBus _signalBus;
 
-        protected override void OnShowed(PlayableDirector obj)
+        protected override void OnShown(PlayableDirector obj)
         {
-            base.OnShowed(obj);
+            base.OnShown(obj);
             _signalBus.Fire<Core.GameSignals.Pause>();
         }
 

@@ -6,10 +6,9 @@ using Zenject;
 public class LobbyGameScreen : GameScreen
 { 
         [Inject] private WelcomeBonusOnStart _welcomeBonusOnStart;
-        protected override void OnShowed(PlayableDirector obj)
+        protected override void OnShown(PlayableDirector obj)
         {
-                base.OnShowed(obj);
-                
+                base.OnShown(obj);
                 _welcomeBonusOnStart.RequestPopup();
         }
 }

@@ -4,7 +4,7 @@ using Zenject;
 
 namespace MemoryMatch.Scripts
 {
-    public class BuyLifeAndStartGame : ScreenButton
+    public class BuyLifeAndStartGame : ShowScreenButton
     {
         [Inject] private LivesManager _livesManager;
         [Inject] private CoinsWallet _coinsWallet;

@@ -10,9 +10,9 @@ namespace Core.GameScreens
     {
         [Inject] private MusicController _musicController;
         [SerializeField] protected AudioClip audioClip;
-        protected override void OnShowed(PlayableDirector obj)
+        protected override void OnShown(PlayableDirector obj)
         {
-            base.OnShowed(obj);
+            base.OnShown(obj);
             _musicController.TryPlay(audioClip);
         }
     }
