@@ -6,7 +6,7 @@ namespace Core.CustomTimeline.Base
 {
     public static class TimelineExtensions
     {
-        private static readonly WaitForEndOfFrame _frameWait = new();
+        private static readonly WaitForEndOfFrame _frameWait = new WaitForEndOfFrame();
 
         public static void Reset(this PlayableDirector timeline)
         {
